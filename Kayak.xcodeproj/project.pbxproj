@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECD2C6B51C2738CB00A96B7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6B41C2738CB00A96B7F /* main.m */; };
+		ECD2C6B81C2738CB00A96B7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6B71C2738CB00A96B7F /* AppDelegate.m */; };
+		ECD2C6BB1C2738CB00A96B7F /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6BA1C2738CB00A96B7F /* GameScene.m */; };
+		ECD2C6BD1C2738CB00A96B7F /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6BC1C2738CB00A96B7F /* GameScene.sks */; };
+		ECD2C6C01C2738CB00A96B7F /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6BF1C2738CB00A96B7F /* GameViewController.m */; };
+		ECD2C6C31C2738CB00A96B7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6C11C2738CB00A96B7F /* Main.storyboard */; };
+		ECD2C6C51C2738CB00A96B7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6C41C2738CB00A96B7F /* Assets.xcassets */; };
+		ECD2C6C81C2738CB00A96B7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6C61C2738CB00A96B7F /* LaunchScreen.storyboard */; };
+		ECD2C6D01C27391E00A96B7F /* igraScene.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6CF1C27391D00A96B7F /* igraScene.m */; };
+		ECD2C6D41C273B5500A96B7F /* uvodna.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6D31C273B5500A96B7F /* uvodna.png */; };
+		ECD2C6D61C27402700A96B7F /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6D51C27402700A96B7F /* start.png */; };
+		ECD2C6DC1C274AC500A96B7F /* kamen1.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6D71C274AC500A96B7F /* kamen1.png */; };
+		ECD2C6DD1C274AC500A96B7F /* kamen2.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6D81C274AC500A96B7F /* kamen2.png */; };
+		ECD2C6DE1C274AC500A96B7F /* kamen3.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6D91C274AC500A96B7F /* kamen3.png */; };
+		ECD2C6DF1C274AC500A96B7F /* kamen4.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6DA1C274AC500A96B7F /* kamen4.png */; };
+		ECD2C6E01C274AC500A96B7F /* kamen5.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6DB1C274AC500A96B7F /* kamen5.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ECD2C6B01C2738CB00A96B7F /* Kayak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kayak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD2C6B41C2738CB00A96B7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ECD2C6B61C2738CB00A96B7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ECD2C6B71C2738CB00A96B7F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ECD2C6B91C2738CB00A96B7F /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		ECD2C6BA1C2738CB00A96B7F /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		ECD2C6BC1C2738CB00A96B7F /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		ECD2C6BE1C2738CB00A96B7F /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		ECD2C6BF1C2738CB00A96B7F /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		ECD2C6C21C2738CB00A96B7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECD2C6C41C2738CB00A96B7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECD2C6C71C2738CB00A96B7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ECD2C6C91C2738CB00A96B7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECD2C6CF1C27391D00A96B7F /* igraScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = igraScene.m; sourceTree = "<group>"; };
+		ECD2C6D11C27393000A96B7F /* igraScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = igraScene.h; sourceTree = "<group>"; };
+		ECD2C6D31C273B5500A96B7F /* uvodna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uvodna.png; sourceTree = "<group>"; };
+		ECD2C6D51C27402700A96B7F /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
+		ECD2C6D71C274AC500A96B7F /* kamen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kamen1.png; sourceTree = "<group>"; };
+		ECD2C6D81C274AC500A96B7F /* kamen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kamen2.png; sourceTree = "<group>"; };
+		ECD2C6D91C274AC500A96B7F /* kamen3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kamen3.png; sourceTree = "<group>"; };
+		ECD2C6DA1C274AC500A96B7F /* kamen4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kamen4.png; sourceTree = "<group>"; };
+		ECD2C6DB1C274AC500A96B7F /* kamen5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kamen5.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECD2C6AD1C2738CB00A96B7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECD2C6A71C2738CB00A96B7F = {
+			isa = PBXGroup;
+			children = (
+				ECD2C6D21C273A0600A96B7F /* slike */,
+				ECD2C6B21C2738CB00A96B7F /* Kayak */,
+				ECD2C6B11C2738CB00A96B7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECD2C6B11C2738CB00A96B7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECD2C6B01C2738CB00A96B7F /* Kayak.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECD2C6B21C2738CB00A96B7F /* Kayak */ = {
+			isa = PBXGroup;
+			children = (
+				ECD2C6B61C2738CB00A96B7F /* AppDelegate.h */,
+				ECD2C6B71C2738CB00A96B7F /* AppDelegate.m */,
+				ECD2C6D11C27393000A96B7F /* igraScene.h */,
+				ECD2C6CF1C27391D00A96B7F /* igraScene.m */,
+				ECD2C6B91C2738CB00A96B7F /* GameScene.h */,
+				ECD2C6BA1C2738CB00A96B7F /* GameScene.m */,
+				ECD2C6BC1C2738CB00A96B7F /* GameScene.sks */,
+				ECD2C6BE1C2738CB00A96B7F /* GameViewController.h */,
+				ECD2C6BF1C2738CB00A96B7F /* GameViewController.m */,
+				ECD2C6C11C2738CB00A96B7F /* Main.storyboard */,
+				ECD2C6C41C2738CB00A96B7F /* Assets.xcassets */,
+				ECD2C6C61C2738CB00A96B7F /* LaunchScreen.storyboard */,
+				ECD2C6C91C2738CB00A96B7F /* Info.plist */,
+				ECD2C6B31C2738CB00A96B7F /* Supporting Files */,
+			);
+			path = Kayak;
+			sourceTree = "<group>";
+		};
+		ECD2C6B31C2738CB00A96B7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECD2C6B41C2738CB00A96B7F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECD2C6D21C273A0600A96B7F /* slike */ = {
+			isa = PBXGroup;
+			children = (
+				ECD2C6D31C273B5500A96B7F /* uvodna.png */,
+				ECD2C6D51C27402700A96B7F /* start.png */,
+				ECD2C6D71C274AC500A96B7F /* kamen1.png */,
+				ECD2C6D81C274AC500A96B7F /* kamen2.png */,
+				ECD2C6D91C274AC500A96B7F /* kamen3.png */,
+				ECD2C6DA1C274AC500A96B7F /* kamen4.png */,
+				ECD2C6DB1C274AC500A96B7F /* kamen5.png */,
+			);
+			name = slike;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECD2C6AF1C2738CB00A96B7F /* Kayak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECD2C6CC1C2738CB00A96B7F /* Build configuration list for PBXNativeTarget "Kayak" */;
+			buildPhases = (
+				ECD2C6AC1C2738CB00A96B7F /* Sources */,
+				ECD2C6AD1C2738CB00A96B7F /* Frameworks */,
+				ECD2C6AE1C2738CB00A96B7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kayak;
+			productName = Kayak;
+			productReference = ECD2C6B01C2738CB00A96B7F /* Kayak.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECD2C6A81C2738CB00A96B7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Anton Orzes";
+				TargetAttributes = {
+					ECD2C6AF1C2738CB00A96B7F = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = ECD2C6AB1C2738CB00A96B7F /* Build configuration list for PBXProject "Kayak" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECD2C6A71C2738CB00A96B7F;
+			productRefGroup = ECD2C6B11C2738CB00A96B7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECD2C6AF1C2738CB00A96B7F /* Kayak */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECD2C6AE1C2738CB00A96B7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD2C6DE1C274AC500A96B7F /* kamen3.png in Resources */,
+				ECD2C6DF1C274AC500A96B7F /* kamen4.png in Resources */,
+				ECD2C6DC1C274AC500A96B7F /* kamen1.png in Resources */,
+				ECD2C6D41C273B5500A96B7F /* uvodna.png in Resources */,
+				ECD2C6BD1C2738CB00A96B7F /* GameScene.sks in Resources */,
+				ECD2C6DD1C274AC500A96B7F /* kamen2.png in Resources */,
+				ECD2C6E01C274AC500A96B7F /* kamen5.png in Resources */,
+				ECD2C6C81C2738CB00A96B7F /* LaunchScreen.storyboard in Resources */,
+				ECD2C6C51C2738CB00A96B7F /* Assets.xcassets in Resources */,
+				ECD2C6D61C27402700A96B7F /* start.png in Resources */,
+				ECD2C6C31C2738CB00A96B7F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECD2C6AC1C2738CB00A96B7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD2C6D01C27391E00A96B7F /* igraScene.m in Sources */,
+				ECD2C6C01C2738CB00A96B7F /* GameViewController.m in Sources */,
+				ECD2C6B81C2738CB00A96B7F /* AppDelegate.m in Sources */,
+				ECD2C6BB1C2738CB00A96B7F /* GameScene.m in Sources */,
+				ECD2C6B51C2738CB00A96B7F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ECD2C6C11C2738CB00A96B7F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECD2C6C21C2738CB00A96B7F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ECD2C6C61C2738CB00A96B7F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECD2C6C71C2738CB00A96B7F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECD2C6CA1C2738CB00A96B7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ECD2C6CB1C2738CB00A96B7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECD2C6CD1C2738CB00A96B7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Kayak/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = orzes.Kayak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ECD2C6CE1C2738CB00A96B7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Kayak/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = orzes.Kayak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECD2C6AB1C2738CB00A96B7F /* Build configuration list for PBXProject "Kayak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECD2C6CA1C2738CB00A96B7F /* Debug */,
+				ECD2C6CB1C2738CB00A96B7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECD2C6CC1C2738CB00A96B7F /* Build configuration list for PBXNativeTarget "Kayak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECD2C6CD1C2738CB00A96B7F /* Debug */,
+				ECD2C6CE1C2738CB00A96B7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECD2C6A81C2738CB00A96B7F /* Project object */;
+}
