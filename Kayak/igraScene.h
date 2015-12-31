@@ -12,6 +12,9 @@
 {
     NSTimer *timerA;
     CGFloat a;
+    SKSpriteNode *trava1;
+    SKSpriteNode *trava2;
+    CGFloat velKamena;
 }
 
 @end

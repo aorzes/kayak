@@ -7,7 +7,19 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "prvaScena.h"
 
 @interface GameScene : SKScene
+
+{
+    SKShapeNode *osovina;
+    SKSpriteNode *aiOnOff;
+    SKSpriteNode *endurance;
+    NSInteger brojKrugova;
+    BOOL aionoff,enduranceOn;
+    UIActivityIndicatorView *spinner;
+    
+
+}
 
 @end

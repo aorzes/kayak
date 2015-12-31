@@ -7,6 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ECCADF761C342B1200E31B7E /* 1lap.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF691C342B1200E31B7E /* 1lap.png */; };
+		ECCADF771C342B1200E31B7E /* 2lap.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF6A1C342B1200E31B7E /* 2lap.png */; };
+		ECCADF781C342B1200E31B7E /* 3lap.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF6B1C342B1200E31B7E /* 3lap.png */; };
+		ECCADF791C342B1200E31B7E /* 5lap.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF6C1C342B1200E31B7E /* 5lap.png */; };
+		ECCADF7A1C342B1200E31B7E /* 10lap.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF6D1C342B1200E31B7E /* 10lap.png */; };
+		ECCADF7B1C342B1200E31B7E /* aiOff.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF6E1C342B1200E31B7E /* aiOff.png */; };
+		ECCADF7C1C342B1200E31B7E /* aiOn.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF6F1C342B1200E31B7E /* aiOn.png */; };
+		ECCADF7D1C342B1200E31B7E /* endurance.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF701C342B1200E31B7E /* endurance.png */; };
+		ECCADF7F1C342B1200E31B7E /* quickGame.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF721C342B1200E31B7E /* quickGame.png */; };
+		ECCADF801C342B1200E31B7E /* selectMap.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF731C342B1200E31B7E /* selectMap.png */; };
+		ECCADF811C342B1200E31B7E /* startGame.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF741C342B1200E31B7E /* startGame.png */; };
+		ECCADF821C342B1200E31B7E /* timePerLap.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF751C342B1200E31B7E /* timePerLap.png */; };
+		ECCADF861C343F7F00E31B7E /* poluga.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF851C343F7F00E31B7E /* poluga.png */; };
+		ECCADF881C3445E000E31B7E /* enduranceOn.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF871C3445E000E31B7E /* enduranceOn.png */; };
+		ECCADF921C34746200E31B7E /* kayakBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF8A1C34746200E31B7E /* kayakBlack.png */; };
+		ECCADF931C34746200E31B7E /* kayakBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF8B1C34746200E31B7E /* kayakBlue.png */; };
+		ECCADF941C34746200E31B7E /* kayakCyan.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF8C1C34746200E31B7E /* kayakCyan.png */; };
+		ECCADF951C34746200E31B7E /* kayakGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF8D1C34746200E31B7E /* kayakGreen.png */; };
+		ECCADF961C34746200E31B7E /* kayakPurple.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF8E1C34746200E31B7E /* kayakPurple.png */; };
+		ECCADF971C34746200E31B7E /* kayakRed.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF8F1C34746200E31B7E /* kayakRed.png */; };
+		ECCADF981C34746200E31B7E /* kayakWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF901C34746200E31B7E /* kayakWhite.png */; };
+		ECCADF991C34746200E31B7E /* kayakYellow.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF911C34746200E31B7E /* kayakYellow.png */; };
+		ECCADFA21C34747700E31B7E /* veslacBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF9A1C34747700E31B7E /* veslacBlack.png */; };
+		ECCADFA31C34747700E31B7E /* veslacBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF9B1C34747700E31B7E /* veslacBlue.png */; };
+		ECCADFA41C34747700E31B7E /* veslacCyan.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF9C1C34747700E31B7E /* veslacCyan.png */; };
+		ECCADFA51C34747700E31B7E /* veslacGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF9D1C34747700E31B7E /* veslacGreen.png */; };
+		ECCADFA61C34747700E31B7E /* veslacPurple.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF9E1C34747700E31B7E /* veslacPurple.png */; };
+		ECCADFA71C34747700E31B7E /* veslacRed.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF9F1C34747700E31B7E /* veslacRed.png */; };
+		ECCADFA81C34747700E31B7E /* veslacWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFA01C34747700E31B7E /* veslacWhite.png */; };
+		ECCADFA91C34747700E31B7E /* veslacYellow.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFA11C34747700E31B7E /* veslacYellow.png */; };
+		ECCADFAC1C34773A00E31B7E /* pljus.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFAB1C34773A00E31B7E /* pljus.png */; };
+		ECCADFAE1C34774B00E31B7E /* riba.atlas in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFAD1C34774B00E31B7E /* riba.atlas */; };
+		ECCADFB01C34775B00E31B7E /* novcici.atlas in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFAF1C34775B00E31B7E /* novcici.atlas */; };
+		ECCADFB21C34778200E31B7E /* staza4.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFB11C34778200E31B7E /* staza4.png */; };
+		ECCADFB61C3477AE00E31B7E /* voda3.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFB31C3477AE00E31B7E /* voda3.png */; };
+		ECCADFB71C3477AE00E31B7E /* zemlja4.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFB41C3477AE00E31B7E /* zemlja4.png */; };
+		ECCADFB81C3477AE00E31B7E /* zemlja4U.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFB51C3477AE00E31B7E /* zemlja4U.png */; };
+		ECCADFBA1C3477F900E31B7E /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFB91C3477F900E31B7E /* start.png */; };
+		ECCADFC71C34782400E31B7E /* brzac0.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFBC1C34782400E31B7E /* brzac0.png */; };
+		ECCADFC81C34782400E31B7E /* brzac1.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFBD1C34782400E31B7E /* brzac1.png */; };
+		ECCADFC91C34782400E31B7E /* brzac2.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFBE1C34782400E31B7E /* brzac2.png */; };
+		ECCADFCA1C34782400E31B7E /* brzac3.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFBF1C34782400E31B7E /* brzac3.png */; };
+		ECCADFCB1C34782400E31B7E /* brzac4.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFC01C34782400E31B7E /* brzac4.png */; };
+		ECCADFCC1C34782400E31B7E /* brzac5.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFC11C34782400E31B7E /* brzac5.png */; };
+		ECCADFCD1C34782400E31B7E /* brzac6.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFC21C34782400E31B7E /* brzac6.png */; };
+		ECCADFCE1C34782400E31B7E /* brzac7.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFC31C34782400E31B7E /* brzac7.png */; };
+		ECCADFCF1C34782400E31B7E /* brzac8.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFC41C34782400E31B7E /* brzac8.png */; };
+		ECCADFD01C34782400E31B7E /* brzac9.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFC51C34782400E31B7E /* brzac9.png */; };
+		ECCADFD11C34782400E31B7E /* brzac10.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFC61C34782400E31B7E /* brzac10.png */; };
+		ECCADFD41C34785600E31B7E /* bird.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFD31C34785600E31B7E /* bird.mp3 */; };
+		ECCADFD61C34790B00E31B7E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCADFD51C34790B00E31B7E /* AVFoundation.framework */; };
+		ECCADFDA1C3479AF00E31B7E /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFD81C3479AF00E31B7E /* MyParticle.sks */; };
+		ECCADFDB1C3479AF00E31B7E /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFD91C3479AF00E31B7E /* spark.png */; };
+		ECCADFDE1C347B2000E31B7E /* prvaScena.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCADFDD1C347B2000E31B7E /* prvaScena.m */; };
+		ECCADFE01C3488CB00E31B7E /* kajakB.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFDF1C3488CB00E31B7E /* kajakB.png */; };
 		ECD2C6B51C2738CB00A96B7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6B41C2738CB00A96B7F /* main.m */; };
 		ECD2C6B81C2738CB00A96B7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6B71C2738CB00A96B7F /* AppDelegate.m */; };
 		ECD2C6BB1C2738CB00A96B7F /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6BA1C2738CB00A96B7F /* GameScene.m */; };
@@ -17,15 +72,76 @@
 		ECD2C6C81C2738CB00A96B7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6C61C2738CB00A96B7F /* LaunchScreen.storyboard */; };
 		ECD2C6D01C27391E00A96B7F /* igraScene.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6CF1C27391D00A96B7F /* igraScene.m */; };
 		ECD2C6D41C273B5500A96B7F /* uvodna.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6D31C273B5500A96B7F /* uvodna.png */; };
-		ECD2C6D61C27402700A96B7F /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6D51C27402700A96B7F /* start.png */; };
-		ECD2C6DC1C274AC500A96B7F /* kamen1.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6D71C274AC500A96B7F /* kamen1.png */; };
-		ECD2C6DD1C274AC500A96B7F /* kamen2.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6D81C274AC500A96B7F /* kamen2.png */; };
-		ECD2C6DE1C274AC500A96B7F /* kamen3.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6D91C274AC500A96B7F /* kamen3.png */; };
-		ECD2C6DF1C274AC500A96B7F /* kamen4.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6DA1C274AC500A96B7F /* kamen4.png */; };
-		ECD2C6E01C274AC500A96B7F /* kamen5.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6DB1C274AC500A96B7F /* kamen5.png */; };
+		ECD2C6E71C275D7E00A96B7F /* kamen1.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6E11C275D7E00A96B7F /* kamen1.png */; };
+		ECD2C6E81C275D7E00A96B7F /* kamen2.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6E21C275D7E00A96B7F /* kamen2.png */; };
+		ECD2C6E91C275D7E00A96B7F /* kamen3.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6E31C275D7E00A96B7F /* kamen3.png */; };
+		ECD2C6EA1C275D7E00A96B7F /* kamen4.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6E41C275D7E00A96B7F /* kamen4.png */; };
+		ECD2C6EB1C275D7E00A96B7F /* kamen5.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6E51C275D7E00A96B7F /* kamen5.png */; };
+		ECD2C6EC1C275D7E00A96B7F /* kamen6.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6E61C275D7E00A96B7F /* kamen6.png */; };
+		ECD2C6EE1C27609700A96B7F /* voda.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6ED1C27609700A96B7F /* voda.png */; };
+		ECD2C7071C27EF9200A96B7F /* travaJesen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C7031C27EF9200A96B7F /* travaJesen@2x.png */; };
+		ECD2C7081C27EF9200A96B7F /* travaLjeto@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C7041C27EF9200A96B7F /* travaLjeto@2x.png */; };
+		ECD2C7091C27EF9200A96B7F /* travaProljece@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C7051C27EF9200A96B7F /* travaProljece@2x.png */; };
+		ECD2C70A1C27EF9200A96B7F /* travaZima@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C7061C27EF9200A96B7F /* travaZima@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ECCADF691C342B1200E31B7E /* 1lap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1lap.png; sourceTree = "<group>"; };
+		ECCADF6A1C342B1200E31B7E /* 2lap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2lap.png; sourceTree = "<group>"; };
+		ECCADF6B1C342B1200E31B7E /* 3lap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3lap.png; sourceTree = "<group>"; };
+		ECCADF6C1C342B1200E31B7E /* 5lap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5lap.png; sourceTree = "<group>"; };
+		ECCADF6D1C342B1200E31B7E /* 10lap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10lap.png; sourceTree = "<group>"; };
+		ECCADF6E1C342B1200E31B7E /* aiOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aiOff.png; sourceTree = "<group>"; };
+		ECCADF6F1C342B1200E31B7E /* aiOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aiOn.png; sourceTree = "<group>"; };
+		ECCADF701C342B1200E31B7E /* endurance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = endurance.png; sourceTree = "<group>"; };
+		ECCADF721C342B1200E31B7E /* quickGame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quickGame.png; sourceTree = "<group>"; };
+		ECCADF731C342B1200E31B7E /* selectMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectMap.png; sourceTree = "<group>"; };
+		ECCADF741C342B1200E31B7E /* startGame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startGame.png; sourceTree = "<group>"; };
+		ECCADF751C342B1200E31B7E /* timePerLap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timePerLap.png; sourceTree = "<group>"; };
+		ECCADF851C343F7F00E31B7E /* poluga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poluga.png; sourceTree = "<group>"; };
+		ECCADF871C3445E000E31B7E /* enduranceOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enduranceOn.png; sourceTree = "<group>"; };
+		ECCADF8A1C34746200E31B7E /* kayakBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kayakBlack.png; sourceTree = "<group>"; };
+		ECCADF8B1C34746200E31B7E /* kayakBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kayakBlue.png; sourceTree = "<group>"; };
+		ECCADF8C1C34746200E31B7E /* kayakCyan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kayakCyan.png; sourceTree = "<group>"; };
+		ECCADF8D1C34746200E31B7E /* kayakGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kayakGreen.png; sourceTree = "<group>"; };
+		ECCADF8E1C34746200E31B7E /* kayakPurple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kayakPurple.png; sourceTree = "<group>"; };
+		ECCADF8F1C34746200E31B7E /* kayakRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kayakRed.png; sourceTree = "<group>"; };
+		ECCADF901C34746200E31B7E /* kayakWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kayakWhite.png; sourceTree = "<group>"; };
+		ECCADF911C34746200E31B7E /* kayakYellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kayakYellow.png; sourceTree = "<group>"; };
+		ECCADF9A1C34747700E31B7E /* veslacBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = veslacBlack.png; sourceTree = "<group>"; };
+		ECCADF9B1C34747700E31B7E /* veslacBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = veslacBlue.png; sourceTree = "<group>"; };
+		ECCADF9C1C34747700E31B7E /* veslacCyan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = veslacCyan.png; sourceTree = "<group>"; };
+		ECCADF9D1C34747700E31B7E /* veslacGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = veslacGreen.png; sourceTree = "<group>"; };
+		ECCADF9E1C34747700E31B7E /* veslacPurple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = veslacPurple.png; sourceTree = "<group>"; };
+		ECCADF9F1C34747700E31B7E /* veslacRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = veslacRed.png; sourceTree = "<group>"; };
+		ECCADFA01C34747700E31B7E /* veslacWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = veslacWhite.png; sourceTree = "<group>"; };
+		ECCADFA11C34747700E31B7E /* veslacYellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = veslacYellow.png; sourceTree = "<group>"; };
+		ECCADFAB1C34773A00E31B7E /* pljus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pljus.png; sourceTree = "<group>"; };
+		ECCADFAD1C34774B00E31B7E /* riba.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = riba.atlas; sourceTree = "<group>"; };
+		ECCADFAF1C34775B00E31B7E /* novcici.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = novcici.atlas; sourceTree = "<group>"; };
+		ECCADFB11C34778200E31B7E /* staza4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = staza4.png; sourceTree = "<group>"; };
+		ECCADFB31C3477AE00E31B7E /* voda3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voda3.png; sourceTree = "<group>"; };
+		ECCADFB41C3477AE00E31B7E /* zemlja4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zemlja4.png; sourceTree = "<group>"; };
+		ECCADFB51C3477AE00E31B7E /* zemlja4U.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zemlja4U.png; sourceTree = "<group>"; };
+		ECCADFB91C3477F900E31B7E /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
+		ECCADFBC1C34782400E31B7E /* brzac0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brzac0.png; sourceTree = "<group>"; };
+		ECCADFBD1C34782400E31B7E /* brzac1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brzac1.png; sourceTree = "<group>"; };
+		ECCADFBE1C34782400E31B7E /* brzac2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brzac2.png; sourceTree = "<group>"; };
+		ECCADFBF1C34782400E31B7E /* brzac3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brzac3.png; sourceTree = "<group>"; };
+		ECCADFC01C34782400E31B7E /* brzac4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brzac4.png; sourceTree = "<group>"; };
+		ECCADFC11C34782400E31B7E /* brzac5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brzac5.png; sourceTree = "<group>"; };
+		ECCADFC21C34782400E31B7E /* brzac6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brzac6.png; sourceTree = "<group>"; };
+		ECCADFC31C34782400E31B7E /* brzac7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brzac7.png; sourceTree = "<group>"; };
+		ECCADFC41C34782400E31B7E /* brzac8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brzac8.png; sourceTree = "<group>"; };
+		ECCADFC51C34782400E31B7E /* brzac9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brzac9.png; sourceTree = "<group>"; };
+		ECCADFC61C34782400E31B7E /* brzac10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brzac10.png; sourceTree = "<group>"; };
+		ECCADFD31C34785600E31B7E /* bird.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bird.mp3; sourceTree = "<group>"; };
+		ECCADFD51C34790B00E31B7E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		ECCADFD81C3479AF00E31B7E /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
+		ECCADFD91C3479AF00E31B7E /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		ECCADFDC1C347B2000E31B7E /* prvaScena.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prvaScena.h; sourceTree = "<group>"; };
+		ECCADFDD1C347B2000E31B7E /* prvaScena.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = prvaScena.m; sourceTree = "<group>"; };
+		ECCADFDF1C3488CB00E31B7E /* kajakB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kajakB.png; sourceTree = "<group>"; };
 		ECD2C6B01C2738CB00A96B7F /* Kayak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kayak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD2C6B41C2738CB00A96B7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ECD2C6B61C2738CB00A96B7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,12 +158,17 @@
 		ECD2C6CF1C27391D00A96B7F /* igraScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = igraScene.m; sourceTree = "<group>"; };
 		ECD2C6D11C27393000A96B7F /* igraScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = igraScene.h; sourceTree = "<group>"; };
 		ECD2C6D31C273B5500A96B7F /* uvodna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uvodna.png; sourceTree = "<group>"; };
-		ECD2C6D51C27402700A96B7F /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
-		ECD2C6D71C274AC500A96B7F /* kamen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kamen1.png; sourceTree = "<group>"; };
-		ECD2C6D81C274AC500A96B7F /* kamen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kamen2.png; sourceTree = "<group>"; };
-		ECD2C6D91C274AC500A96B7F /* kamen3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kamen3.png; sourceTree = "<group>"; };
-		ECD2C6DA1C274AC500A96B7F /* kamen4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kamen4.png; sourceTree = "<group>"; };
-		ECD2C6DB1C274AC500A96B7F /* kamen5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kamen5.png; sourceTree = "<group>"; };
+		ECD2C6E11C275D7E00A96B7F /* kamen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kamen1.png; sourceTree = "<group>"; };
+		ECD2C6E21C275D7E00A96B7F /* kamen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kamen2.png; sourceTree = "<group>"; };
+		ECD2C6E31C275D7E00A96B7F /* kamen3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kamen3.png; sourceTree = "<group>"; };
+		ECD2C6E41C275D7E00A96B7F /* kamen4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kamen4.png; sourceTree = "<group>"; };
+		ECD2C6E51C275D7E00A96B7F /* kamen5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kamen5.png; sourceTree = "<group>"; };
+		ECD2C6E61C275D7E00A96B7F /* kamen6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kamen6.png; sourceTree = "<group>"; };
+		ECD2C6ED1C27609700A96B7F /* voda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voda.png; sourceTree = "<group>"; };
+		ECD2C7031C27EF9200A96B7F /* travaJesen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "travaJesen@2x.png"; sourceTree = "<group>"; };
+		ECD2C7041C27EF9200A96B7F /* travaLjeto@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "travaLjeto@2x.png"; sourceTree = "<group>"; };
+		ECD2C7051C27EF9200A96B7F /* travaProljece@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "travaProljece@2x.png"; sourceTree = "<group>"; };
+		ECD2C7061C27EF9200A96B7F /* travaZima@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "travaZima@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,16 +176,115 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECCADFD61C34790B00E31B7E /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ECCADF4C1C33F62100E31B7E /* izbornik */ = {
+			isa = PBXGroup;
+			children = (
+				ECCADFDF1C3488CB00E31B7E /* kajakB.png */,
+				ECCADF691C342B1200E31B7E /* 1lap.png */,
+				ECCADF6A1C342B1200E31B7E /* 2lap.png */,
+				ECCADF6B1C342B1200E31B7E /* 3lap.png */,
+				ECCADF6C1C342B1200E31B7E /* 5lap.png */,
+				ECCADF6D1C342B1200E31B7E /* 10lap.png */,
+				ECCADF6E1C342B1200E31B7E /* aiOff.png */,
+				ECCADF6F1C342B1200E31B7E /* aiOn.png */,
+				ECCADF701C342B1200E31B7E /* endurance.png */,
+				ECCADF871C3445E000E31B7E /* enduranceOn.png */,
+				ECCADF851C343F7F00E31B7E /* poluga.png */,
+				ECCADF721C342B1200E31B7E /* quickGame.png */,
+				ECCADF731C342B1200E31B7E /* selectMap.png */,
+				ECCADF741C342B1200E31B7E /* startGame.png */,
+				ECCADF751C342B1200E31B7E /* timePerLap.png */,
+			);
+			name = izbornik;
+			sourceTree = "<group>";
+		};
+		ECCADF891C3473B900E31B7E /* Kajaci */ = {
+			isa = PBXGroup;
+			children = (
+				ECCADF9A1C34747700E31B7E /* veslacBlack.png */,
+				ECCADF9B1C34747700E31B7E /* veslacBlue.png */,
+				ECCADF9C1C34747700E31B7E /* veslacCyan.png */,
+				ECCADF9D1C34747700E31B7E /* veslacGreen.png */,
+				ECCADF9E1C34747700E31B7E /* veslacPurple.png */,
+				ECCADF9F1C34747700E31B7E /* veslacRed.png */,
+				ECCADFA01C34747700E31B7E /* veslacWhite.png */,
+				ECCADFA11C34747700E31B7E /* veslacYellow.png */,
+				ECCADF8A1C34746200E31B7E /* kayakBlack.png */,
+				ECCADF8B1C34746200E31B7E /* kayakBlue.png */,
+				ECCADF8C1C34746200E31B7E /* kayakCyan.png */,
+				ECCADF8D1C34746200E31B7E /* kayakGreen.png */,
+				ECCADF8E1C34746200E31B7E /* kayakPurple.png */,
+				ECCADF8F1C34746200E31B7E /* kayakRed.png */,
+				ECCADF901C34746200E31B7E /* kayakWhite.png */,
+				ECCADF911C34746200E31B7E /* kayakYellow.png */,
+			);
+			name = Kajaci;
+			sourceTree = "<group>";
+		};
+		ECCADFAA1C34769300E31B7E /* igraSlike */ = {
+			isa = PBXGroup;
+			children = (
+				ECCADFB91C3477F900E31B7E /* start.png */,
+				ECCADFB31C3477AE00E31B7E /* voda3.png */,
+				ECCADFB41C3477AE00E31B7E /* zemlja4.png */,
+				ECCADFB51C3477AE00E31B7E /* zemlja4U.png */,
+				ECCADFB11C34778200E31B7E /* staza4.png */,
+				ECCADFAB1C34773A00E31B7E /* pljus.png */,
+				ECCADFAF1C34775B00E31B7E /* novcici.atlas */,
+				ECCADFAD1C34774B00E31B7E /* riba.atlas */,
+			);
+			name = igraSlike;
+			sourceTree = "<group>";
+		};
+		ECCADFBB1C34780C00E31B7E /* brzac */ = {
+			isa = PBXGroup;
+			children = (
+				ECCADFBC1C34782400E31B7E /* brzac0.png */,
+				ECCADFBD1C34782400E31B7E /* brzac1.png */,
+				ECCADFBE1C34782400E31B7E /* brzac2.png */,
+				ECCADFBF1C34782400E31B7E /* brzac3.png */,
+				ECCADFC01C34782400E31B7E /* brzac4.png */,
+				ECCADFC11C34782400E31B7E /* brzac5.png */,
+				ECCADFC21C34782400E31B7E /* brzac6.png */,
+				ECCADFC31C34782400E31B7E /* brzac7.png */,
+				ECCADFC41C34782400E31B7E /* brzac8.png */,
+				ECCADFC51C34782400E31B7E /* brzac9.png */,
+				ECCADFC61C34782400E31B7E /* brzac10.png */,
+			);
+			name = brzac;
+			sourceTree = "<group>";
+		};
+		ECCADFD21C34783D00E31B7E /* zvukovi */ = {
+			isa = PBXGroup;
+			children = (
+				ECCADFD31C34785600E31B7E /* bird.mp3 */,
+			);
+			name = zvukovi;
+			sourceTree = "<group>";
+		};
+		ECCADFD71C34795D00E31B7E /* particle */ = {
+			isa = PBXGroup;
+			children = (
+				ECCADFD81C3479AF00E31B7E /* MyParticle.sks */,
+				ECCADFD91C3479AF00E31B7E /* spark.png */,
+			);
+			name = particle;
+			sourceTree = "<group>";
+		};
 		ECD2C6A71C2738CB00A96B7F = {
 			isa = PBXGroup;
 			children = (
+				ECCADFD51C34790B00E31B7E /* AVFoundation.framework */,
+				ECCADFD21C34783D00E31B7E /* zvukovi */,
 				ECD2C6D21C273A0600A96B7F /* slike */,
+				ECCADFD71C34795D00E31B7E /* particle */,
 				ECD2C6B21C2738CB00A96B7F /* Kayak */,
 				ECD2C6B11C2738CB00A96B7F /* Products */,
 			);
@@ -85,6 +305,8 @@
 				ECD2C6B71C2738CB00A96B7F /* AppDelegate.m */,
 				ECD2C6D11C27393000A96B7F /* igraScene.h */,
 				ECD2C6CF1C27391D00A96B7F /* igraScene.m */,
+				ECCADFDC1C347B2000E31B7E /* prvaScena.h */,
+				ECCADFDD1C347B2000E31B7E /* prvaScena.m */,
 				ECD2C6B91C2738CB00A96B7F /* GameScene.h */,
 				ECD2C6BA1C2738CB00A96B7F /* GameScene.m */,
 				ECD2C6BC1C2738CB00A96B7F /* GameScene.sks */,
@@ -110,13 +332,22 @@
 		ECD2C6D21C273A0600A96B7F /* slike */ = {
 			isa = PBXGroup;
 			children = (
+				ECCADFBB1C34780C00E31B7E /* brzac */,
+				ECCADFAA1C34769300E31B7E /* igraSlike */,
+				ECCADF891C3473B900E31B7E /* Kajaci */,
+				ECCADF4C1C33F62100E31B7E /* izbornik */,
+				ECD2C7031C27EF9200A96B7F /* travaJesen@2x.png */,
+				ECD2C7041C27EF9200A96B7F /* travaLjeto@2x.png */,
+				ECD2C7051C27EF9200A96B7F /* travaProljece@2x.png */,
+				ECD2C7061C27EF9200A96B7F /* travaZima@2x.png */,
 				ECD2C6D31C273B5500A96B7F /* uvodna.png */,
-				ECD2C6D51C27402700A96B7F /* start.png */,
-				ECD2C6D71C274AC500A96B7F /* kamen1.png */,
-				ECD2C6D81C274AC500A96B7F /* kamen2.png */,
-				ECD2C6D91C274AC500A96B7F /* kamen3.png */,
-				ECD2C6DA1C274AC500A96B7F /* kamen4.png */,
-				ECD2C6DB1C274AC500A96B7F /* kamen5.png */,
+				ECD2C6E11C275D7E00A96B7F /* kamen1.png */,
+				ECD2C6E21C275D7E00A96B7F /* kamen2.png */,
+				ECD2C6E31C275D7E00A96B7F /* kamen3.png */,
+				ECD2C6E41C275D7E00A96B7F /* kamen4.png */,
+				ECD2C6E51C275D7E00A96B7F /* kamen5.png */,
+				ECD2C6E61C275D7E00A96B7F /* kamen6.png */,
+				ECD2C6ED1C27609700A96B7F /* voda.png */,
 			);
 			name = slike;
 			sourceTree = "<group>";
@@ -178,17 +409,75 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECD2C6DE1C274AC500A96B7F /* kamen3.png in Resources */,
-				ECD2C6DF1C274AC500A96B7F /* kamen4.png in Resources */,
-				ECD2C6DC1C274AC500A96B7F /* kamen1.png in Resources */,
+				ECCADFB61C3477AE00E31B7E /* voda3.png in Resources */,
+				ECCADF781C342B1200E31B7E /* 3lap.png in Resources */,
+				ECD2C7071C27EF9200A96B7F /* travaJesen@2x.png in Resources */,
+				ECD2C6E91C275D7E00A96B7F /* kamen3.png in Resources */,
+				ECCADF7F1C342B1200E31B7E /* quickGame.png in Resources */,
+				ECCADFCF1C34782400E31B7E /* brzac8.png in Resources */,
+				ECCADF981C34746200E31B7E /* kayakWhite.png in Resources */,
+				ECCADF991C34746200E31B7E /* kayakYellow.png in Resources */,
+				ECCADFD01C34782400E31B7E /* brzac9.png in Resources */,
+				ECCADF771C342B1200E31B7E /* 2lap.png in Resources */,
+				ECD2C6EA1C275D7E00A96B7F /* kamen4.png in Resources */,
+				ECCADF791C342B1200E31B7E /* 5lap.png in Resources */,
+				ECCADFB81C3477AE00E31B7E /* zemlja4U.png in Resources */,
+				ECCADF971C34746200E31B7E /* kayakRed.png in Resources */,
+				ECCADF7C1C342B1200E31B7E /* aiOn.png in Resources */,
+				ECCADFA21C34747700E31B7E /* veslacBlack.png in Resources */,
+				ECCADFCD1C34782400E31B7E /* brzac6.png in Resources */,
+				ECCADFB71C3477AE00E31B7E /* zemlja4.png in Resources */,
+				ECCADFC71C34782400E31B7E /* brzac0.png in Resources */,
+				ECCADF811C342B1200E31B7E /* startGame.png in Resources */,
+				ECD2C6E71C275D7E00A96B7F /* kamen1.png in Resources */,
+				ECCADFA41C34747700E31B7E /* veslacCyan.png in Resources */,
+				ECCADFA51C34747700E31B7E /* veslacGreen.png in Resources */,
+				ECCADFCC1C34782400E31B7E /* brzac5.png in Resources */,
+				ECCADFCB1C34782400E31B7E /* brzac4.png in Resources */,
+				ECD2C6EE1C27609700A96B7F /* voda.png in Resources */,
+				ECCADFA31C34747700E31B7E /* veslacBlue.png in Resources */,
+				ECCADF941C34746200E31B7E /* kayakCyan.png in Resources */,
+				ECCADF821C342B1200E31B7E /* timePerLap.png in Resources */,
+				ECCADFDA1C3479AF00E31B7E /* MyParticle.sks in Resources */,
+				ECCADFD11C34782400E31B7E /* brzac10.png in Resources */,
+				ECD2C6EC1C275D7E00A96B7F /* kamen6.png in Resources */,
 				ECD2C6D41C273B5500A96B7F /* uvodna.png in Resources */,
+				ECCADFDB1C3479AF00E31B7E /* spark.png in Resources */,
 				ECD2C6BD1C2738CB00A96B7F /* GameScene.sks in Resources */,
-				ECD2C6DD1C274AC500A96B7F /* kamen2.png in Resources */,
-				ECD2C6E01C274AC500A96B7F /* kamen5.png in Resources */,
+				ECD2C70A1C27EF9200A96B7F /* travaZima@2x.png in Resources */,
+				ECCADF7D1C342B1200E31B7E /* endurance.png in Resources */,
+				ECCADFA71C34747700E31B7E /* veslacRed.png in Resources */,
+				ECD2C6E81C275D7E00A96B7F /* kamen2.png in Resources */,
+				ECCADFAE1C34774B00E31B7E /* riba.atlas in Resources */,
+				ECCADF761C342B1200E31B7E /* 1lap.png in Resources */,
+				ECCADFA81C34747700E31B7E /* veslacWhite.png in Resources */,
+				ECD2C6EB1C275D7E00A96B7F /* kamen5.png in Resources */,
+				ECCADFE01C3488CB00E31B7E /* kajakB.png in Resources */,
+				ECCADF881C3445E000E31B7E /* enduranceOn.png in Resources */,
+				ECD2C7081C27EF9200A96B7F /* travaLjeto@2x.png in Resources */,
+				ECCADF951C34746200E31B7E /* kayakGreen.png in Resources */,
+				ECCADFCA1C34782400E31B7E /* brzac3.png in Resources */,
+				ECCADFA91C34747700E31B7E /* veslacYellow.png in Resources */,
+				ECCADF801C342B1200E31B7E /* selectMap.png in Resources */,
+				ECCADFC81C34782400E31B7E /* brzac1.png in Resources */,
+				ECD2C7091C27EF9200A96B7F /* travaProljece@2x.png in Resources */,
+				ECCADFCE1C34782400E31B7E /* brzac7.png in Resources */,
+				ECCADF921C34746200E31B7E /* kayakBlack.png in Resources */,
+				ECCADF931C34746200E31B7E /* kayakBlue.png in Resources */,
+				ECCADF861C343F7F00E31B7E /* poluga.png in Resources */,
+				ECCADFB01C34775B00E31B7E /* novcici.atlas in Resources */,
+				ECCADF961C34746200E31B7E /* kayakPurple.png in Resources */,
+				ECCADF7B1C342B1200E31B7E /* aiOff.png in Resources */,
+				ECCADFBA1C3477F900E31B7E /* start.png in Resources */,
 				ECD2C6C81C2738CB00A96B7F /* LaunchScreen.storyboard in Resources */,
+				ECCADFB21C34778200E31B7E /* staza4.png in Resources */,
+				ECCADFD41C34785600E31B7E /* bird.mp3 in Resources */,
+				ECCADF7A1C342B1200E31B7E /* 10lap.png in Resources */,
 				ECD2C6C51C2738CB00A96B7F /* Assets.xcassets in Resources */,
-				ECD2C6D61C27402700A96B7F /* start.png in Resources */,
+				ECCADFC91C34782400E31B7E /* brzac2.png in Resources */,
 				ECD2C6C31C2738CB00A96B7F /* Main.storyboard in Resources */,
+				ECCADFAC1C34773A00E31B7E /* pljus.png in Resources */,
+				ECCADFA61C34747700E31B7E /* veslacPurple.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +493,7 @@
 				ECD2C6B81C2738CB00A96B7F /* AppDelegate.m in Sources */,
 				ECD2C6BB1C2738CB00A96B7F /* GameScene.m in Sources */,
 				ECD2C6B51C2738CB00A96B7F /* main.m in Sources */,
+				ECCADFDE1C347B2000E31B7E /* prvaScena.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +604,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Kayak/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = orzes.Kayak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -325,6 +616,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Kayak/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = orzes.Kayak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +642,7 @@
 				ECD2C6CE1C2738CB00A96B7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

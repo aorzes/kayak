@@ -11,25 +11,200 @@
 
 @implementation GameScene
 
+-(void)LoadGame{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    aionoff = [defaults boolForKey:@"aionoff"];
+    enduranceOn = [defaults boolForKey:@"enduranceOn"];
+    brojKrugova = [defaults integerForKey:@"brojKrugova"];
+    if(brojKrugova == 0)
+    {
+        brojKrugova =3;
+        aionoff = YES;
+        enduranceOn = NO;
+    }
+}
+
+-(void)SaveGame {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setBool:aionoff forKey:@"aionoff"];
+    [defaults setBool:enduranceOn forKey:@"enduranceOn"];
+    [defaults setInteger:brojKrugova forKey:@"brojKrugova"];
+    [defaults synchronize];
+}
+
+
 -(void)didMoveToView:(SKView *)view {
     /* Setup your scene here */
    
+    float razmak = 70;
+    
+    [self LoadGame];
+    
+    
     
     SKSpriteNode *podloga = [SKSpriteNode spriteNodeWithImageNamed:@"uvodna"];
     podloga.size = CGSizeMake(self.size.width, self.size.height);
     podloga.position = CGPointMake(self.size.width/2, self.size.height/2);
-    podloga.name = @"start";
-    podloga.zPosition=1;
+    podloga.name = @"podloga";
+    podloga.zPosition=0;
     [self addChild:podloga];
     
-    SKSpriteNode *tipka = [SKSpriteNode spriteNodeWithImageNamed:@"start"];
-    tipka.size = CGSizeMake(self.size.width/2, 100);
-    tipka.position = CGPointMake(self.size.width/2, self.size.height - 100);
-    tipka.name = @"start";
-    tipka.zPosition=2;
-    [self addChild:tipka];
+    
+    SKShapeNode *bijelo = [SKShapeNode shapeNodeWithRect:CGRectMake(30, 50, self.size.width/3+30, self.size.height-80)];
+    bijelo.fillColor = [UIColor whiteColor];
+    bijelo.alpha=0.3;
+    bijelo.name = @"bijelo";
+    bijelo.zPosition=1;
+    [self addChild:bijelo];
+    
+    SKSpriteNode *quick = [SKSpriteNode spriteNodeWithImageNamed:@"quickGame"];
+    quick.size = CGSizeMake(self.size.width/3, 50);
+    quick.position = CGPointMake(100, self.size.height - razmak);
+    quick.name = @"quick";
+    quick.zPosition=2;
+    [self addChild:quick];
+    
+    spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    [spinner setCenter:CGPointMake(quick.position.x+quick.size.width + 10, 50)]; // I do this because I'm in landscape mode
+    [self.view addSubview:spinner];
+    
+    aiOnOff = [SKSpriteNode spriteNodeWithImageNamed:@"aiOn"];
+    aiOnOff.size = CGSizeMake(self.size.width/3, 50);
+    aiOnOff.position = CGPointMake(100, quick.position.y-razmak);
+    aiOnOff.name = @"aiOnOff";
+    aiOnOff.zPosition=2;
+    [self addChild:aiOnOff];
+    if (aionoff) {
+        aiOnOff.texture = [SKTexture textureWithImageNamed:@"aiOn"];
+    }
+    else{
+        aiOnOff.texture = [SKTexture textureWithImageNamed:@"aiOff"];
+    }
+
+    
+    SKSpriteNode *timePerLap = [SKSpriteNode spriteNodeWithImageNamed:@"timePerLap"];
+    timePerLap.size = CGSizeMake(self.size.width/3, 50);
+    timePerLap.position = CGPointMake(100, aiOnOff.position.y-razmak);
+    timePerLap.name = @"timePerLap";
+    timePerLap.zPosition=2;
+    [self addChild:timePerLap];
+    
+    endurance = [SKSpriteNode spriteNodeWithImageNamed:@"endurance"];
+    endurance.size = CGSizeMake(self.size.width/3, 50);
+    endurance.position = CGPointMake(100, timePerLap.position.y-razmak);
+    endurance.name = @"endurance";
+    endurance.zPosition=2;
+    [self addChild:endurance];
+    if (enduranceOn) {
+        endurance.texture = [SKTexture textureWithImageNamed:@"enduranceOn"];
+    }
+    else{
+        endurance.texture = [SKTexture textureWithImageNamed:@"endurance"];
+    }
+
+    
+    SKSpriteNode *selectMap = [SKSpriteNode spriteNodeWithImageNamed:@"selectMap"];
+    selectMap.size = CGSizeMake(self.size.width/3, 50);
+    selectMap.position = CGPointMake(100, endurance.position.y-razmak);
+    selectMap.name = @"selectMap";
+    selectMap.zPosition=2;
+    [self addChild:selectMap];
+    
+    SKSpriteNode *startGame = [SKSpriteNode spriteNodeWithImageNamed:@"startGame"];
+    startGame.size = CGSizeMake(self.size.width/3, 50);
+    startGame.position = CGPointMake(100, selectMap.position.y-razmak);
+    startGame.name = @"start";
+    startGame.zPosition=2;
+    [self addChild:startGame];
+    
+    osovina = [SKShapeNode shapeNodeWithCircleOfRadius:2];
+    osovina.fillColor = [UIColor whiteColor];
+    osovina.position = CGPointMake(timePerLap.position.x+timePerLap.size.width/2+10, timePerLap.position.y);
+    osovina.name = @"osovina";
+    osovina.zPosition=0;
+    [self addChild:osovina];
+    
+    SKSpriteNode *poluga = [SKSpriteNode spriteNodeWithImageNamed:@"poluga"];
+    poluga.size = CGSizeMake(self.size.width/3, 30);
+    poluga.anchorPoint =CGPointMake(0.0, 0.5);
+    poluga.position = CGPointMake(0, 0);
+    poluga.name = @"poluga";
+    poluga.zPosition=3;
+    [osovina addChild:poluga];
     
     
+    SKSpriteNode *Lap1 = [SKSpriteNode spriteNodeWithImageNamed:@"1lap"];
+    Lap1.size = CGSizeMake(self.size.width/3, 40);
+    Lap1.position = CGPointMake(self.size.width-20, timePerLap.position.y+80);
+    Lap1.name = @"1lap";
+    Lap1.zPosition=4;
+    [self addChild:Lap1];
+    
+    SKSpriteNode *Lap2 = [SKSpriteNode spriteNodeWithImageNamed:@"2lap"];
+    Lap2.size = CGSizeMake(self.size.width/3, 40);
+    Lap2.position = CGPointMake(self.size.width-20, timePerLap.position.y+40);
+    Lap2.name = @"2lap";
+    Lap2.zPosition=4;
+    [self addChild:Lap2];
+    
+    SKSpriteNode *Lap3 = [SKSpriteNode spriteNodeWithImageNamed:@"3lap"];
+    Lap3.size = CGSizeMake(self.size.width/3, 40);
+    Lap3.position = CGPointMake(self.size.width-20, timePerLap.position.y);
+    Lap3.name = @"3lap";
+    Lap3.zPosition=4;
+    [self addChild:Lap3];
+    
+    SKSpriteNode *Lap4 = [SKSpriteNode spriteNodeWithImageNamed:@"5lap"];
+    Lap4.size = CGSizeMake(self.size.width/3, 40);
+    Lap4.position = CGPointMake(self.size.width-20, timePerLap.position.y-40);
+    Lap4.name = @"4lap";
+    Lap4.zPosition=4;
+    [self addChild:Lap4];
+    
+    SKSpriteNode *Lap5 = [SKSpriteNode spriteNodeWithImageNamed:@"10lap"];
+    Lap5.size = CGSizeMake(self.size.width/3, 40);
+    Lap5.position = CGPointMake(self.size.width-20, timePerLap.position.y-80);
+    Lap5.name = @"5lap";
+    Lap5.zPosition=4;
+    [self addChild:Lap5];
+
+    SKSpriteNode *node = Lap1;
+    switch (brojKrugova) {
+        case 1:
+            node = Lap1;
+            break;
+        case 2:
+            node = Lap2;
+            break;
+        case 3:
+            node = Lap3;
+            break;
+        case 5:
+            node = Lap4;
+            break;
+        case 10:
+            node = Lap5;
+            break;
+            
+        default:
+            node = Lap3;
+            break;
+    }
+    
+    CGFloat kut = atan2f(osovina.position.y-node.position.y, osovina.position.x-node.position.x+50)+M_PI;
+    SKAction *rotiraj = [SKAction rotateToAngle:kut duration:0.2 shortestUnitArc:YES];
+    [osovina runAction:rotiraj];
+
+    
+}
+
+-(void) pokreniPrviLevel{
+
+    SKScene *igra = [[prvaScena alloc]initWithSize:self.size];
+    SKTransition *tranzicija = [SKTransition pushWithDirection:SKTransitionDirectionDown duration:0.4];
+    [self.view presentScene:igra transition:tranzicija];
+    [spinner stopAnimating];
+
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -38,6 +213,16 @@
     for (UITouch *touch in touches) {
         CGPoint p = [touch locationInNode:self];
         SKNode *node = [self nodeAtPoint:p];
+        if ([node.name isEqualToString:@"quick"]) {
+            
+            [spinner startAnimating];
+            SKAction *pokC=[SKAction waitForDuration:0.1];
+            SKAction *pokL = [SKAction performSelector: @selector(pokreniPrviLevel) onTarget:(self)];
+            [self runAction:[SKAction sequence:@[pokC,pokL]]];
+            
+            
+        }
+
         if ([node.name isEqualToString:@"start"]) {
             SKScene *igra = [[igraScene alloc]initWithSize:self.size];
             igra.scaleMode = SKSceneScaleModeAspectFill;
@@ -45,8 +230,52 @@
             [self.view presentScene:igra transition:tranzicija];
             
         }
+        if ([node.name isEqualToString:@"1lap"] || [node.name isEqualToString:@"2lap"] || [node.name isEqualToString:@"3lap"] || [node.name isEqualToString:@"4lap"] || [node.name isEqualToString:@"5lap"])
+        {
+            
+            CGFloat kut = atan2f(osovina.position.y-node.position.y, osovina.position.x-node.position.x+50)+M_PI;
+            SKAction *rotiraj = [SKAction rotateToAngle:kut duration:0.2 shortestUnitArc:YES];
+            [osovina runAction:rotiraj];
+            if ([node.name isEqualToString:@"1lap"]) {brojKrugova = 1;}
+            if ([node.name isEqualToString:@"2lap"]) {brojKrugova = 2;}
+            if ([node.name isEqualToString:@"3lap"]) {brojKrugova = 3;}
+            if ([node.name isEqualToString:@"4lap"]) {brojKrugova = 5;}
+            if ([node.name isEqualToString:@"5lap"]) {brojKrugova = 10;}
+
+        }
+        if ([node.name isEqualToString:@"aiOnOff"]) {
+            
+            aionoff = !aionoff;
+            if (aionoff) {
+                aiOnOff.texture = [SKTexture textureWithImageNamed:@"aiOn"];
+            }
+            else{
+                aiOnOff.texture = [SKTexture textureWithImageNamed:@"aiOff"];
+            }
+            
+        }
+        if ([node.name isEqualToString:@"endurance"]) {
+            
+            enduranceOn = !enduranceOn;
+            if (enduranceOn) {
+                endurance.texture = [SKTexture textureWithImageNamed:@"enduranceOn"];
+            }
+            else{
+                endurance.texture = [SKTexture textureWithImageNamed:@"endurance"];
+            }
+            
+        }
+
+
+
 
     }
+}
+
+-(void) touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self SaveGame];
+
 }
 
 -(void)update:(CFTimeInterval)currentTime {
