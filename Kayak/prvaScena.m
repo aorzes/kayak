@@ -21,6 +21,7 @@
         brojKrugova =3;
         aionoff = YES;
         enduranceOn = NO;
+        mapa = 0;
     }
 }
 
@@ -586,6 +587,7 @@
             potezac2Timer = nil;
             [riverSounds stop];
             riverSounds = nil;
+            
             
             
             SKScene *igra = [[winScene alloc]initWithSize:self.size];
