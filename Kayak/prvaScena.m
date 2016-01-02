@@ -10,14 +10,34 @@
 
 @implementation prvaScena
 
+-(void)LoadGame{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    aionoff = [defaults boolForKey:@"aionoff"];
+    enduranceOn = [defaults boolForKey:@"enduranceOn"];
+    brojKrugova = [defaults integerForKey:@"brojKrugova"];
+    mapa = [defaults integerForKey:@"mapa"];
+    if(brojKrugova == 0)
+    {
+        brojKrugova =3;
+        aionoff = YES;
+        enduranceOn = NO;
+    }
+}
+
+-(void)SaveGame {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setFloat:ukupnoVrijeme forKey:@"ukupnoVrijeme"];
+    [defaults synchronize];
+}
 
 
 -(void)didMoveToView:(SKView *)view
 {
     
-    
+    [self LoadGame];
     krug = 0;
     novac = 0;
+    ukupnoVrijeme = 0;
     krugoviLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
     krugoviLabel.text=[NSString stringWithFormat:@"Lap:%d",krug];
     krugoviLabel.fontSize = 20;
@@ -40,43 +60,88 @@
     [self addChild:centar];
     
     
+//izbor mape
+    NSString *prvoIme = @"staza5";
+    NSString *drugoIme = @"zemlja5U";
+    NSString *treceIme = @"zemlja5";
+    NSString *cetvrtoIme = @"voda4";
+
+    switch (mapa) {
+        case 0:
+            prvoIme = @"staza1";
+            drugoIme = @"zemlja1U";
+            treceIme = @"zemlja1";
+            break;
+        case 1:
+            prvoIme = @"staza2";
+            drugoIme = @"zemlja2U";
+            treceIme = @"zemlja2";
+            cetvrtoIme = @"voda3";
+            break;
+        case 2:
+            prvoIme = @"staza3";
+            drugoIme = @"zemlja3U";
+            treceIme = @"zemlja3";
+            cetvrtoIme = @"voda2";
+            break;
+        case 3:
+            prvoIme = @"staza4";
+            drugoIme = @"zemlja4U";
+            treceIme = @"zemlja4";
+            break;
+        case 4:
+            prvoIme = @"staza5";
+            drugoIme = @"zemlja5U";
+            treceIme = @"zemlja5";
+            break;
+            
+        default:
+            prvoIme = @"staza5";
+            drugoIme = @"zemlja5U";
+            treceIme = @"zemlja5";
+            break;
+    }
+
+    voda1 = [SKSpriteNode spriteNodeWithImageNamed:cetvrtoIme];
+    voda1.position = CGPointMake(self.size.width/2, self.size.height/2);
+    voda1.size = CGSizeMake(self.size.width, self.size.height);
+    voda1.zPosition=0;
+    [self addChild:voda1];
+
+    
     //ovo je trava drvece i ostalo na obali
-    myWorld = [SKSpriteNode spriteNodeWithImageNamed:@"staza4"];
+    myWorld = [SKSpriteNode spriteNodeWithImageNamed:prvoIme];
     myWorld.size=CGSizeMake(self.size.width*umnozak, self.size.width*umnozak);
     myWorld.position = CGPointMake(0, 0);
     myWorld.zPosition = 4;
     [centar addChild:myWorld];
     
-    
-    
-    
     //unutarni i vanjski dio koji je bodi kako camac ne bi isao na obalu
-    SKSpriteNode *unutarnja = [SKSpriteNode spriteNodeWithImageNamed:@"zemlja4U"];
+    unutarnja = [SKSpriteNode spriteNodeWithImageNamed:drugoIme];
     unutarnja.size=CGSizeMake(self.size.width*umnozak, self.size.width*umnozak);
     unutarnja.position = CGPointMake(0, 0);
     unutarnja.zPosition = 1;
+    unutarnja.alpha =0;
     unutarnja.physicsBody = [SKPhysicsBody bodyWithTexture:unutarnja.texture size:unutarnja.size];
     unutarnja.physicsBody.affectedByGravity = NO;
     unutarnja.physicsBody.dynamic = NO;
     [centar addChild:unutarnja];
     
-    SKSpriteNode *vanjska = [SKSpriteNode spriteNodeWithImageNamed:@"zemlja4"];
+    vanjska = [SKSpriteNode spriteNodeWithImageNamed:treceIme];
     vanjska.size=CGSizeMake(self.size.width*umnozak, self.size.width*umnozak);
     vanjska.position = CGPointMake(0, 0);
     vanjska.zPosition = 1;
+    vanjska.alpha =0;
     vanjska.physicsBody = [SKPhysicsBody bodyWithTexture:vanjska.texture size:vanjska.size];
     vanjska.physicsBody.affectedByGravity = NO;
     vanjska.physicsBody.dynamic = NO;
     [centar addChild:vanjska];
+  //kraj izbora mape
     
-    voda1 = [SKSpriteNode spriteNodeWithImageNamed:@"voda3"];
-    voda1.position = CGPointMake(self.size.width/2, self.size.height/2);
-    voda1.size = CGSizeMake(self.size.width, self.size.height);
-    voda1.zPosition=0;
-    [self addChild:voda1];
+   
     
     kajak = [SKSpriteNode spriteNodeWithImageNamed:@"kayakRed"];
-    kajak.position = CGPointMake(self.size.width/2, self.size.height/2);;
+    kajak.position = CGPointMake(self.size.width/2-40, self.size.height/2);;
     kajak.size = CGSizeMake(20, 80);
     kajak.zPosition=4;
     kajak.physicsBody=[SKPhysicsBody bodyWithRectangleOfSize:kajak.size];
@@ -100,36 +165,39 @@
     
     
     //drugi kajak - protivnik
-    kajak2 = [SKSpriteNode spriteNodeWithImageNamed:@"kayakBlue"];
-    kajak2.position = CGPointMake(self.size.width/2-50, self.size.height/2);;
-    kajak2.size = CGSizeMake(20, 80);
-    kajak2.zPosition=4;
-    kajak2.physicsBody=[SKPhysicsBody bodyWithRectangleOfSize:kajak.size];
-    kajak2.physicsBody.linearDamping=0.9;
-    kajak2.physicsBody.angularDamping=0.9;
-    [self addChild:kajak2];
+    if(aionoff)
+    {
+        kajak2 = [SKSpriteNode spriteNodeWithImageNamed:@"kayakBlue"];
+        kajak2.position = CGPointMake(self.size.width/2-65, self.size.height/2);;
+        kajak2.size = CGSizeMake(20, 80);
+        kajak2.zPosition=4;
+        kajak2.physicsBody=[SKPhysicsBody bodyWithRectangleOfSize:kajak.size];
+        kajak2.physicsBody.linearDamping=0.9;
+        kajak2.physicsBody.angularDamping=0.9;
+        [self addChild:kajak2];
     
-    veslac2 = [SKSpriteNode spriteNodeWithImageNamed:@"veslacBlue"];
-    veslac2.position = CGPointMake(0, -5);;
-    veslac2.size = CGSizeMake(60, 20);
-    veslac2.zPosition=1;
-    [kajak2 addChild:veslac2];
+        veslac2 = [SKSpriteNode spriteNodeWithImageNamed:@"veslacBlue"];
+        veslac2.position = CGPointMake(0, -5);;
+        veslac2.size = CGSizeMake(60, 20);
+        veslac2.zPosition=1;
+        [kajak2 addChild:veslac2];
     
-    SKAction *lijevoRot = [SKAction rotateToAngle:0.9 duration:0.8];
-    SKAction *plusniLijevo =[SKAction performSelector:@selector(buc2L) onTarget:self];
-    SKAction *desnoRot = [SKAction rotateToAngle:-0.9 duration:0.8];
-    SKAction *plusniDesno =[SKAction performSelector:@selector(buc2R) onTarget:self];
-    SKAction *zajednoVeslaj =[SKAction repeatActionForever:[SKAction sequence:@[lijevoRot,plusniLijevo,desnoRot,plusniDesno]]];
-    [veslac2 runAction:zajednoVeslaj];
+        SKAction *lijevoRot = [SKAction rotateToAngle:0.9 duration:0.8];
+        SKAction *plusniLijevo =[SKAction performSelector:@selector(buc2L) onTarget:self];
+        SKAction *desnoRot = [SKAction rotateToAngle:-0.9 duration:0.8];
+        SKAction *plusniDesno =[SKAction performSelector:@selector(buc2R) onTarget:self];
+        SKAction *zajednoVeslaj =[SKAction repeatActionForever:[SKAction sequence:@[lijevoRot,plusniLijevo,desnoRot,plusniDesno]]];
+        [veslac2 runAction:zajednoVeslaj];
     
-    potezac2 = [SKShapeNode shapeNodeWithCircleOfRadius:2.5];
-    potezac2.position = CGPointMake(kajak2.position.x,kajak2.position.y+kajak2.size.height/2);
-    potezac2.zPosition=0;
-    potezac2.alpha = 1;
-    [self addChild:potezac2];
-    potezac2Timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(miciCamac2) userInfo:nil repeats:YES];
-    bDodatak = 0;
-    rDodatak =50;
+        potezac2 = [SKShapeNode shapeNodeWithCircleOfRadius:2.5];
+        potezac2.position = CGPointMake(kajak2.position.x,kajak2.position.y+kajak2.size.height/2);
+        potezac2.zPosition=0;
+        potezac2.alpha = 1;
+        [self addChild:potezac2];
+        potezac2Timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(miciCamac2) userInfo:nil repeats:YES];
+        bDodatak = 0;
+        rDodatak =50;
+    }
     //kraj drugog kajaka
     
     pljuskanje = [NSTimer scheduledTimerWithTimeInterval:0.3 target:self selector:@selector(napraviTrag) userInfo:nil repeats:YES];
@@ -145,7 +213,7 @@
     [riverSounds setNumberOfLoops: -1];
     [riverSounds prepareToPlay];
     [riverSounds play];
-    r=self.size.width*umnozak/2.5;
+    r=self.size.width*umnozak/2.4;
     for (float kk=0; kk<M_PI*2; kk+=M_PI/6) {
         SKSpriteNode *kamen = [SKSpriteNode spriteNodeWithImageNamed:@"kamen6"];
         kamen.position = CGPointMake(r*cos(kk), r*sin(kk));
@@ -371,7 +439,7 @@
     [pljus runAction:zadrugim];
     [myWorld addChild:pljus];
     [rep removeFromParent];
-    [self napraviTrag2];
+    if(aionoff){[self napraviTrag2];}
 }
 
 -(void) napraviTrag2{
@@ -500,10 +568,31 @@
             
         }
         krug=(int)(a/(2*M_PI));
-        if((a/(2*M_PI)-(float)krug>0.9 )) krug++;
+        //if((a/(2*M_PI)-(float)krug>0.9 )) krug++;
         krugoviLabel.text=[NSString stringWithFormat:@"Lap:%d",krug+1];
-        if([nod.name isEqualToString:@"start"] && [kajak intersectsNode:nod]){
+        //win game
+        if(krug==brojKrugova){
+            //pobjeda
+            [self SaveGame];
+            [pljuskanje invalidate];
+            pljuskanje = nil;
+            [pljusKamena invalidate];
+            pljusKamena =nil;
+            [ribaTimer invalidate];
+            ribaTimer = nil;
+            [brzacTimer invalidate];
+            brzacTimer = nil;
+            [potezac2Timer invalidate];
+            potezac2Timer = nil;
+            [riverSounds stop];
+            riverSounds = nil;
             
+            
+            SKScene *igra = [[winScene alloc]initWithSize:self.size];
+            SKTransition *tranzicija = [SKTransition pushWithDirection:SKTransitionDirectionDown duration:1.4];
+            [self.view presentScene:igra transition:tranzicija];
+            
+           
             
         }
         
@@ -512,6 +601,10 @@
     
 }
 
+-(void) dealloc
+{
+    NSLog(@"dealloc: %@", self);
+}
 
 -(void) miciCamac{
     kut+=dkut;
@@ -529,13 +622,14 @@
     impuls=0;
     [kajak.physicsBody applyImpulse:CGVectorMake(0,-0.02*cos(kut))];
     
+    
 }
 
 -(void) miciCamac2{
     
     b-=0.0004;
     bDodatak += 0.2;
-    rDodatak= sin(bDodatak)*30+30;
+    rDodatak= sin(bDodatak)*30+50;
     potezac2.position = CGPointMake(centar.position.x + (r + rDodatak) * cos(b) , centar.position.y + (r + rDodatak) * sin(b));
     float kt = atan2f(kajak2.position.y-potezac2.position.y, kajak2.position.x-potezac2.position.x)+M_PI_2;
     kajak2.zRotation = kt;
@@ -557,7 +651,7 @@
 
 
 -(void) miciRibu{
-    
+    ukupnoVrijeme+=0.1;
     CGPoint pr=riba.position;
     pr.y-=1;
     if(pr.y<-20) pr.y= self.size.height + 20;
@@ -604,7 +698,23 @@
     
     a+=0.001;
     centar.zRotation = a;
-    
+    if(kajak.position.y<-40)
+    {
+        //gubitak
+        [pljuskanje invalidate];
+        [pljusKamena invalidate];
+        [ribaTimer invalidate];
+        [brzacTimer invalidate];
+        [potezac2Timer invalidate];
+        [riverSounds stop];
+        SKScene *igra = [[fallScene alloc]initWithSize:self.size];
+        igra.scaleMode = SKSceneScaleModeAspectFill;
+        SKTransition *tranzicija = [SKTransition pushWithDirection:SKTransitionDirectionDown duration:0.4];
+        [self.view presentScene:igra transition:tranzicija];
+        
+    }
+
+
     
 }
 

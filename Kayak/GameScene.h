@@ -8,6 +8,7 @@
 
 #import <SpriteKit/SpriteKit.h>
 #import "prvaScena.h"
+#import "izbornikScene.h"
 
 @interface GameScene : SKScene
 
@@ -18,8 +19,7 @@
     NSInteger brojKrugova;
     BOOL aionoff,enduranceOn;
     UIActivityIndicatorView *spinner;
-    
 
 }
-
+;
 @end

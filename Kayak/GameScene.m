@@ -7,7 +7,6 @@
 //
 
 #import "GameScene.h"
-#import "igraScene.h"
 
 @implementation GameScene
 
@@ -50,7 +49,7 @@
     [self addChild:podloga];
     
     
-    SKShapeNode *bijelo = [SKShapeNode shapeNodeWithRect:CGRectMake(30, 50, self.size.width/3+30, self.size.height-80)];
+    SKShapeNode *bijelo = [SKShapeNode shapeNodeWithRect:CGRectMake(30, 30, self.size.width/3+30, self.size.height-50)];
     bijelo.fillColor = [UIColor whiteColor];
     bijelo.alpha=0.3;
     bijelo.name = @"bijelo";
@@ -195,6 +194,13 @@
     SKAction *rotiraj = [SKAction rotateToAngle:kut duration:0.2 shortestUnitArc:YES];
     [osovina runAction:rotiraj];
 
+    SKShapeNode *bijelo2 = [SKShapeNode shapeNodeWithRect:CGRectMake(Lap5.position.x-Lap5.size.width/2-10, Lap5.position.y-30, 70, Lap1.position.y - Lap5.position.y + 80)];
+    bijelo2.fillColor = [UIColor whiteColor];
+    bijelo2.alpha=0.3;
+    bijelo2.name = @"bijelo";
+    bijelo2.zPosition=1;
+    [self addChild:bijelo2];
+    
     
 }
 
@@ -222,9 +228,18 @@
             
             
         }
+        
+        if ([node.name isEqualToString:@"selectMap"]) {
+            SKScene *igra = [[izbornikScene alloc]initWithSize:self.size];
+            igra.scaleMode = SKSceneScaleModeAspectFill;
+            SKTransition *tranzicija = [SKTransition pushWithDirection:SKTransitionDirectionDown duration:0.4];
+            [self.view presentScene:igra transition:tranzicija];
+            
+        }
+
 
         if ([node.name isEqualToString:@"start"]) {
-            SKScene *igra = [[igraScene alloc]initWithSize:self.size];
+            SKScene *igra = [[winScene alloc]initWithSize:self.size];
             igra.scaleMode = SKSceneScaleModeAspectFill;
             SKTransition *tranzicija = [SKTransition pushWithDirection:SKTransitionDirectionDown duration:0.4];
             [self.view presentScene:igra transition:tranzicija];

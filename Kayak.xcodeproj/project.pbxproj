@@ -62,6 +62,30 @@
 		ECCADFDB1C3479AF00E31B7E /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFD91C3479AF00E31B7E /* spark.png */; };
 		ECCADFDE1C347B2000E31B7E /* prvaScena.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCADFDD1C347B2000E31B7E /* prvaScena.m */; };
 		ECCADFE01C3488CB00E31B7E /* kajakB.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFDF1C3488CB00E31B7E /* kajakB.png */; };
+		ECCADFE31C353B2700E31B7E /* fallScene.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCADFE21C353B2700E31B7E /* fallScene.m */; };
+		ECCADFE61C3541A500E31B7E /* winScene.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCADFE51C3541A500E31B7E /* winScene.m */; };
+		ECCADFE81C3550B100E31B7E /* fallPodloga.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFE71C3550B100E31B7E /* fallPodloga.png */; };
+		ECCADFEA1C3561D200E31B7E /* winPodloga.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFE91C3561D200E31B7E /* winPodloga.png */; };
+		ECCADFEC1C35891B00E31B7E /* pehar.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFEB1C35891B00E31B7E /* pehar.png */; };
+		ECCADFEE1C358B8600E31B7E /* newGame.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFED1C358B8600E31B7E /* newGame.png */; };
+		ECCADFF31C36F2FC00E31B7E /* zemlja5.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFF11C36F2FC00E31B7E /* zemlja5.png */; };
+		ECCADFF41C36F2FC00E31B7E /* zemlja5U.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFF21C36F2FC00E31B7E /* zemlja5U.png */; };
+		ECCADFF61C36FA9000E31B7E /* staza5.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFF51C36FA9000E31B7E /* staza5.png */; };
+		ECCADFFB1C37035700E31B7E /* zemlja1.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFF91C37035700E31B7E /* zemlja1.png */; };
+		ECCADFFC1C37035700E31B7E /* zemlja1U.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADFFA1C37035700E31B7E /* zemlja1U.png */; };
+		ECCAE0011C3717B800E31B7E /* izbornikScene.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCAE0001C3717B800E31B7E /* izbornikScene.m */; };
+		ECCAE0031C37192400E31B7E /* voda4.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0021C37192400E31B7E /* voda4.png */; };
+		ECCAE0051C371B1900E31B7E /* iOkvir.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0041C371B1900E31B7E /* iOkvir.png */; };
+		ECCAE0071C371E2E00E31B7E /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0061C371E2E00E31B7E /* back.png */; };
+		ECCAE0091C37254B00E31B7E /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0081C37254B00E31B7E /* check.png */; };
+		ECCAE0141C375DB000E31B7E /* zemlja2.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0121C375DB000E31B7E /* zemlja2.png */; };
+		ECCAE0151C375DB000E31B7E /* zemlja2U.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0131C375DB000E31B7E /* zemlja2U.png */; };
+		ECCAE0171C375DC000E31B7E /* staza2.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0161C375DC000E31B7E /* staza2.png */; };
+		ECCAE01B1C37E94800E31B7E /* zemlja3.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE01A1C37E94800E31B7E /* zemlja3.png */; };
+		ECCAE0211C37ED6100E31B7E /* voda2.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0201C37ED6100E31B7E /* voda2.png */; };
+		ECCAE0281C37FBB800E31B7E /* zemlja3U.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0271C37FBB800E31B7E /* zemlja3U.png */; };
+		ECCAE02A1C37FBD300E31B7E /* staza3.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0291C37FBD300E31B7E /* staza3.png */; };
+		ECCAE02C1C37FED900E31B7E /* staza1.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE02B1C37FED900E31B7E /* staza1.png */; };
 		ECD2C6B51C2738CB00A96B7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6B41C2738CB00A96B7F /* main.m */; };
 		ECD2C6B81C2738CB00A96B7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6B71C2738CB00A96B7F /* AppDelegate.m */; };
 		ECD2C6BB1C2738CB00A96B7F /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6BA1C2738CB00A96B7F /* GameScene.m */; };
@@ -70,7 +94,6 @@
 		ECD2C6C31C2738CB00A96B7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6C11C2738CB00A96B7F /* Main.storyboard */; };
 		ECD2C6C51C2738CB00A96B7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6C41C2738CB00A96B7F /* Assets.xcassets */; };
 		ECD2C6C81C2738CB00A96B7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6C61C2738CB00A96B7F /* LaunchScreen.storyboard */; };
-		ECD2C6D01C27391E00A96B7F /* igraScene.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6CF1C27391D00A96B7F /* igraScene.m */; };
 		ECD2C6D41C273B5500A96B7F /* uvodna.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6D31C273B5500A96B7F /* uvodna.png */; };
 		ECD2C6E71C275D7E00A96B7F /* kamen1.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6E11C275D7E00A96B7F /* kamen1.png */; };
 		ECD2C6E81C275D7E00A96B7F /* kamen2.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6E21C275D7E00A96B7F /* kamen2.png */; };
@@ -79,10 +102,6 @@
 		ECD2C6EB1C275D7E00A96B7F /* kamen5.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6E51C275D7E00A96B7F /* kamen5.png */; };
 		ECD2C6EC1C275D7E00A96B7F /* kamen6.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6E61C275D7E00A96B7F /* kamen6.png */; };
 		ECD2C6EE1C27609700A96B7F /* voda.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C6ED1C27609700A96B7F /* voda.png */; };
-		ECD2C7071C27EF9200A96B7F /* travaJesen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C7031C27EF9200A96B7F /* travaJesen@2x.png */; };
-		ECD2C7081C27EF9200A96B7F /* travaLjeto@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C7041C27EF9200A96B7F /* travaLjeto@2x.png */; };
-		ECD2C7091C27EF9200A96B7F /* travaProljece@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C7051C27EF9200A96B7F /* travaProljece@2x.png */; };
-		ECD2C70A1C27EF9200A96B7F /* travaZima@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD2C7061C27EF9200A96B7F /* travaZima@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -142,6 +161,33 @@
 		ECCADFDC1C347B2000E31B7E /* prvaScena.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prvaScena.h; sourceTree = "<group>"; };
 		ECCADFDD1C347B2000E31B7E /* prvaScena.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = prvaScena.m; sourceTree = "<group>"; };
 		ECCADFDF1C3488CB00E31B7E /* kajakB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kajakB.png; sourceTree = "<group>"; };
+		ECCADFE11C353B2700E31B7E /* fallScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fallScene.h; sourceTree = "<group>"; };
+		ECCADFE21C353B2700E31B7E /* fallScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fallScene.m; sourceTree = "<group>"; };
+		ECCADFE41C35418E00E31B7E /* winScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winScene.h; sourceTree = "<group>"; };
+		ECCADFE51C3541A500E31B7E /* winScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = winScene.m; sourceTree = "<group>"; };
+		ECCADFE71C3550B100E31B7E /* fallPodloga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fallPodloga.png; sourceTree = "<group>"; };
+		ECCADFE91C3561D200E31B7E /* winPodloga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = winPodloga.png; sourceTree = "<group>"; };
+		ECCADFEB1C35891B00E31B7E /* pehar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pehar.png; sourceTree = "<group>"; };
+		ECCADFED1C358B8600E31B7E /* newGame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newGame.png; sourceTree = "<group>"; };
+		ECCADFF11C36F2FC00E31B7E /* zemlja5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zemlja5.png; sourceTree = "<group>"; };
+		ECCADFF21C36F2FC00E31B7E /* zemlja5U.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zemlja5U.png; sourceTree = "<group>"; };
+		ECCADFF51C36FA9000E31B7E /* staza5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = staza5.png; sourceTree = "<group>"; };
+		ECCADFF91C37035700E31B7E /* zemlja1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zemlja1.png; sourceTree = "<group>"; };
+		ECCADFFA1C37035700E31B7E /* zemlja1U.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zemlja1U.png; sourceTree = "<group>"; };
+		ECCADFFF1C3717A300E31B7E /* izbornikScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = izbornikScene.h; sourceTree = "<group>"; };
+		ECCAE0001C3717B800E31B7E /* izbornikScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = izbornikScene.m; sourceTree = "<group>"; };
+		ECCAE0021C37192400E31B7E /* voda4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voda4.png; sourceTree = "<group>"; };
+		ECCAE0041C371B1900E31B7E /* iOkvir.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iOkvir.png; sourceTree = "<group>"; };
+		ECCAE0061C371E2E00E31B7E /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		ECCAE0081C37254B00E31B7E /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		ECCAE0121C375DB000E31B7E /* zemlja2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zemlja2.png; sourceTree = "<group>"; };
+		ECCAE0131C375DB000E31B7E /* zemlja2U.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zemlja2U.png; sourceTree = "<group>"; };
+		ECCAE0161C375DC000E31B7E /* staza2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = staza2.png; sourceTree = "<group>"; };
+		ECCAE01A1C37E94800E31B7E /* zemlja3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zemlja3.png; sourceTree = "<group>"; };
+		ECCAE0201C37ED6100E31B7E /* voda2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voda2.png; sourceTree = "<group>"; };
+		ECCAE0271C37FBB800E31B7E /* zemlja3U.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zemlja3U.png; sourceTree = "<group>"; };
+		ECCAE0291C37FBD300E31B7E /* staza3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = staza3.png; sourceTree = "<group>"; };
+		ECCAE02B1C37FED900E31B7E /* staza1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = staza1.png; sourceTree = "<group>"; };
 		ECD2C6B01C2738CB00A96B7F /* Kayak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kayak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD2C6B41C2738CB00A96B7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ECD2C6B61C2738CB00A96B7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -155,8 +201,6 @@
 		ECD2C6C41C2738CB00A96B7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECD2C6C71C2738CB00A96B7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECD2C6C91C2738CB00A96B7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ECD2C6CF1C27391D00A96B7F /* igraScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = igraScene.m; sourceTree = "<group>"; };
-		ECD2C6D11C27393000A96B7F /* igraScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = igraScene.h; sourceTree = "<group>"; };
 		ECD2C6D31C273B5500A96B7F /* uvodna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uvodna.png; sourceTree = "<group>"; };
 		ECD2C6E11C275D7E00A96B7F /* kamen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kamen1.png; sourceTree = "<group>"; };
 		ECD2C6E21C275D7E00A96B7F /* kamen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kamen2.png; sourceTree = "<group>"; };
@@ -165,10 +209,6 @@
 		ECD2C6E51C275D7E00A96B7F /* kamen5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kamen5.png; sourceTree = "<group>"; };
 		ECD2C6E61C275D7E00A96B7F /* kamen6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kamen6.png; sourceTree = "<group>"; };
 		ECD2C6ED1C27609700A96B7F /* voda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voda.png; sourceTree = "<group>"; };
-		ECD2C7031C27EF9200A96B7F /* travaJesen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "travaJesen@2x.png"; sourceTree = "<group>"; };
-		ECD2C7041C27EF9200A96B7F /* travaLjeto@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "travaLjeto@2x.png"; sourceTree = "<group>"; };
-		ECD2C7051C27EF9200A96B7F /* travaProljece@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "travaProljece@2x.png"; sourceTree = "<group>"; };
-		ECD2C7061C27EF9200A96B7F /* travaZima@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "travaZima@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +226,10 @@
 		ECCADF4C1C33F62100E31B7E /* izbornik */ = {
 			isa = PBXGroup;
 			children = (
+				ECCAE0041C371B1900E31B7E /* iOkvir.png */,
+				ECCAE0081C37254B00E31B7E /* check.png */,
+				ECCAE0061C371E2E00E31B7E /* back.png */,
+				ECCADFED1C358B8600E31B7E /* newGame.png */,
 				ECCADFDF1C3488CB00E31B7E /* kajakB.png */,
 				ECCADF691C342B1200E31B7E /* 1lap.png */,
 				ECCADF6A1C342B1200E31B7E /* 2lap.png */,
@@ -232,10 +276,24 @@
 			isa = PBXGroup;
 			children = (
 				ECCADFB91C3477F900E31B7E /* start.png */,
+				ECCAE0201C37ED6100E31B7E /* voda2.png */,
 				ECCADFB31C3477AE00E31B7E /* voda3.png */,
+				ECCAE0021C37192400E31B7E /* voda4.png */,
+				ECCAE02B1C37FED900E31B7E /* staza1.png */,
+				ECCADFF91C37035700E31B7E /* zemlja1.png */,
+				ECCADFFA1C37035700E31B7E /* zemlja1U.png */,
+				ECCAE0161C375DC000E31B7E /* staza2.png */,
+				ECCAE0121C375DB000E31B7E /* zemlja2.png */,
+				ECCAE0131C375DB000E31B7E /* zemlja2U.png */,
+				ECCAE0291C37FBD300E31B7E /* staza3.png */,
+				ECCAE01A1C37E94800E31B7E /* zemlja3.png */,
+				ECCAE0271C37FBB800E31B7E /* zemlja3U.png */,
+				ECCADFB11C34778200E31B7E /* staza4.png */,
 				ECCADFB41C3477AE00E31B7E /* zemlja4.png */,
 				ECCADFB51C3477AE00E31B7E /* zemlja4U.png */,
-				ECCADFB11C34778200E31B7E /* staza4.png */,
+				ECCADFF51C36FA9000E31B7E /* staza5.png */,
+				ECCADFF11C36F2FC00E31B7E /* zemlja5.png */,
+				ECCADFF21C36F2FC00E31B7E /* zemlja5U.png */,
 				ECCADFAB1C34773A00E31B7E /* pljus.png */,
 				ECCADFAF1C34775B00E31B7E /* novcici.atlas */,
 				ECCADFAD1C34774B00E31B7E /* riba.atlas */,
@@ -303,8 +361,12 @@
 			children = (
 				ECD2C6B61C2738CB00A96B7F /* AppDelegate.h */,
 				ECD2C6B71C2738CB00A96B7F /* AppDelegate.m */,
-				ECD2C6D11C27393000A96B7F /* igraScene.h */,
-				ECD2C6CF1C27391D00A96B7F /* igraScene.m */,
+				ECCADFE41C35418E00E31B7E /* winScene.h */,
+				ECCADFE51C3541A500E31B7E /* winScene.m */,
+				ECCADFE11C353B2700E31B7E /* fallScene.h */,
+				ECCADFE21C353B2700E31B7E /* fallScene.m */,
+				ECCADFFF1C3717A300E31B7E /* izbornikScene.h */,
+				ECCAE0001C3717B800E31B7E /* izbornikScene.m */,
 				ECCADFDC1C347B2000E31B7E /* prvaScena.h */,
 				ECCADFDD1C347B2000E31B7E /* prvaScena.m */,
 				ECD2C6B91C2738CB00A96B7F /* GameScene.h */,
@@ -336,11 +398,10 @@
 				ECCADFAA1C34769300E31B7E /* igraSlike */,
 				ECCADF891C3473B900E31B7E /* Kajaci */,
 				ECCADF4C1C33F62100E31B7E /* izbornik */,
-				ECD2C7031C27EF9200A96B7F /* travaJesen@2x.png */,
-				ECD2C7041C27EF9200A96B7F /* travaLjeto@2x.png */,
-				ECD2C7051C27EF9200A96B7F /* travaProljece@2x.png */,
-				ECD2C7061C27EF9200A96B7F /* travaZima@2x.png */,
 				ECD2C6D31C273B5500A96B7F /* uvodna.png */,
+				ECCADFEB1C35891B00E31B7E /* pehar.png */,
+				ECCADFE71C3550B100E31B7E /* fallPodloga.png */,
+				ECCADFE91C3561D200E31B7E /* winPodloga.png */,
 				ECD2C6E11C275D7E00A96B7F /* kamen1.png */,
 				ECD2C6E21C275D7E00A96B7F /* kamen2.png */,
 				ECD2C6E31C275D7E00A96B7F /* kamen3.png */,
@@ -411,7 +472,6 @@
 			files = (
 				ECCADFB61C3477AE00E31B7E /* voda3.png in Resources */,
 				ECCADF781C342B1200E31B7E /* 3lap.png in Resources */,
-				ECD2C7071C27EF9200A96B7F /* travaJesen@2x.png in Resources */,
 				ECD2C6E91C275D7E00A96B7F /* kamen3.png in Resources */,
 				ECCADF7F1C342B1200E31B7E /* quickGame.png in Resources */,
 				ECCADFCF1C34782400E31B7E /* brzac8.png in Resources */,
@@ -419,15 +479,22 @@
 				ECCADF991C34746200E31B7E /* kayakYellow.png in Resources */,
 				ECCADFD01C34782400E31B7E /* brzac9.png in Resources */,
 				ECCADF771C342B1200E31B7E /* 2lap.png in Resources */,
+				ECCAE0031C37192400E31B7E /* voda4.png in Resources */,
 				ECD2C6EA1C275D7E00A96B7F /* kamen4.png in Resources */,
 				ECCADF791C342B1200E31B7E /* 5lap.png in Resources */,
 				ECCADFB81C3477AE00E31B7E /* zemlja4U.png in Resources */,
+				ECCADFF61C36FA9000E31B7E /* staza5.png in Resources */,
 				ECCADF971C34746200E31B7E /* kayakRed.png in Resources */,
 				ECCADF7C1C342B1200E31B7E /* aiOn.png in Resources */,
 				ECCADFA21C34747700E31B7E /* veslacBlack.png in Resources */,
+				ECCADFEA1C3561D200E31B7E /* winPodloga.png in Resources */,
+				ECCAE0141C375DB000E31B7E /* zemlja2.png in Resources */,
 				ECCADFCD1C34782400E31B7E /* brzac6.png in Resources */,
+				ECCAE0281C37FBB800E31B7E /* zemlja3U.png in Resources */,
 				ECCADFB71C3477AE00E31B7E /* zemlja4.png in Resources */,
 				ECCADFC71C34782400E31B7E /* brzac0.png in Resources */,
+				ECCAE0211C37ED6100E31B7E /* voda2.png in Resources */,
+				ECCAE0051C371B1900E31B7E /* iOkvir.png in Resources */,
 				ECCADF811C342B1200E31B7E /* startGame.png in Resources */,
 				ECD2C6E71C275D7E00A96B7F /* kamen1.png in Resources */,
 				ECCADFA41C34747700E31B7E /* veslacCyan.png in Resources */,
@@ -438,13 +505,15 @@
 				ECCADFA31C34747700E31B7E /* veslacBlue.png in Resources */,
 				ECCADF941C34746200E31B7E /* kayakCyan.png in Resources */,
 				ECCADF821C342B1200E31B7E /* timePerLap.png in Resources */,
+				ECCADFE81C3550B100E31B7E /* fallPodloga.png in Resources */,
 				ECCADFDA1C3479AF00E31B7E /* MyParticle.sks in Resources */,
 				ECCADFD11C34782400E31B7E /* brzac10.png in Resources */,
 				ECD2C6EC1C275D7E00A96B7F /* kamen6.png in Resources */,
 				ECD2C6D41C273B5500A96B7F /* uvodna.png in Resources */,
 				ECCADFDB1C3479AF00E31B7E /* spark.png in Resources */,
 				ECD2C6BD1C2738CB00A96B7F /* GameScene.sks in Resources */,
-				ECD2C70A1C27EF9200A96B7F /* travaZima@2x.png in Resources */,
+				ECCADFF31C36F2FC00E31B7E /* zemlja5.png in Resources */,
+				ECCADFEE1C358B8600E31B7E /* newGame.png in Resources */,
 				ECCADF7D1C342B1200E31B7E /* endurance.png in Resources */,
 				ECCADFA71C34747700E31B7E /* veslacRed.png in Resources */,
 				ECD2C6E81C275D7E00A96B7F /* kamen2.png in Resources */,
@@ -454,27 +523,36 @@
 				ECD2C6EB1C275D7E00A96B7F /* kamen5.png in Resources */,
 				ECCADFE01C3488CB00E31B7E /* kajakB.png in Resources */,
 				ECCADF881C3445E000E31B7E /* enduranceOn.png in Resources */,
-				ECD2C7081C27EF9200A96B7F /* travaLjeto@2x.png in Resources */,
 				ECCADF951C34746200E31B7E /* kayakGreen.png in Resources */,
+				ECCAE0171C375DC000E31B7E /* staza2.png in Resources */,
 				ECCADFCA1C34782400E31B7E /* brzac3.png in Resources */,
+				ECCAE0071C371E2E00E31B7E /* back.png in Resources */,
 				ECCADFA91C34747700E31B7E /* veslacYellow.png in Resources */,
+				ECCAE01B1C37E94800E31B7E /* zemlja3.png in Resources */,
 				ECCADF801C342B1200E31B7E /* selectMap.png in Resources */,
+				ECCAE0151C375DB000E31B7E /* zemlja2U.png in Resources */,
 				ECCADFC81C34782400E31B7E /* brzac1.png in Resources */,
-				ECD2C7091C27EF9200A96B7F /* travaProljece@2x.png in Resources */,
+				ECCADFFB1C37035700E31B7E /* zemlja1.png in Resources */,
 				ECCADFCE1C34782400E31B7E /* brzac7.png in Resources */,
 				ECCADF921C34746200E31B7E /* kayakBlack.png in Resources */,
+				ECCAE02C1C37FED900E31B7E /* staza1.png in Resources */,
 				ECCADF931C34746200E31B7E /* kayakBlue.png in Resources */,
 				ECCADF861C343F7F00E31B7E /* poluga.png in Resources */,
 				ECCADFB01C34775B00E31B7E /* novcici.atlas in Resources */,
 				ECCADF961C34746200E31B7E /* kayakPurple.png in Resources */,
+				ECCAE0091C37254B00E31B7E /* check.png in Resources */,
 				ECCADF7B1C342B1200E31B7E /* aiOff.png in Resources */,
 				ECCADFBA1C3477F900E31B7E /* start.png in Resources */,
+				ECCADFF41C36F2FC00E31B7E /* zemlja5U.png in Resources */,
 				ECD2C6C81C2738CB00A96B7F /* LaunchScreen.storyboard in Resources */,
+				ECCAE02A1C37FBD300E31B7E /* staza3.png in Resources */,
 				ECCADFB21C34778200E31B7E /* staza4.png in Resources */,
 				ECCADFD41C34785600E31B7E /* bird.mp3 in Resources */,
 				ECCADF7A1C342B1200E31B7E /* 10lap.png in Resources */,
 				ECD2C6C51C2738CB00A96B7F /* Assets.xcassets in Resources */,
 				ECCADFC91C34782400E31B7E /* brzac2.png in Resources */,
+				ECCADFFC1C37035700E31B7E /* zemlja1U.png in Resources */,
+				ECCADFEC1C35891B00E31B7E /* pehar.png in Resources */,
 				ECD2C6C31C2738CB00A96B7F /* Main.storyboard in Resources */,
 				ECCADFAC1C34773A00E31B7E /* pljus.png in Resources */,
 				ECCADFA61C34747700E31B7E /* veslacPurple.png in Resources */,
@@ -488,10 +566,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECD2C6D01C27391E00A96B7F /* igraScene.m in Sources */,
+				ECCAE0011C3717B800E31B7E /* izbornikScene.m in Sources */,
+				ECCADFE61C3541A500E31B7E /* winScene.m in Sources */,
 				ECD2C6C01C2738CB00A96B7F /* GameViewController.m in Sources */,
 				ECD2C6B81C2738CB00A96B7F /* AppDelegate.m in Sources */,
 				ECD2C6BB1C2738CB00A96B7F /* GameScene.m in Sources */,
+				ECCADFE31C353B2700E31B7E /* fallScene.m in Sources */,
 				ECD2C6B51C2738CB00A96B7F /* main.m in Sources */,
 				ECCADFDE1C347B2000E31B7E /* prvaScena.m in Sources */,
 			);
