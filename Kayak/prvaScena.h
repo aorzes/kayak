@@ -50,6 +50,8 @@
     NSInteger  mapa;
     bool aionoff;
     bool enduranceOn;
+    
+    SKSpriteNode *startCilj;
 }
 
 

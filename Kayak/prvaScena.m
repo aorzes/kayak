@@ -72,6 +72,7 @@
             prvoIme = @"staza1";
             drugoIme = @"zemlja1U";
             treceIme = @"zemlja1";
+            cetvrtoIme = @"voda1";
             break;
         case 1:
             prvoIme = @"staza2";
@@ -157,9 +158,10 @@
     [kajak addChild:veslac];
     
     CGPoint mjesto = [myWorld convertPoint:kajak.position fromNode:self];
-    SKSpriteNode *startCilj = [SKSpriteNode spriteNodeWithImageNamed:@"start"];
+    startCilj = [SKSpriteNode spriteNodeWithImageNamed:@"start"];
     startCilj.size=CGSizeMake(300, 10);
     startCilj.position = mjesto;
+   // startCilj.position = CGPointMake(-r+startCilj.size.width/2, self.size.height/2);
     startCilj.name = @"start";
     startCilj.zPosition = -4;
     [myWorld addChild:startCilj];
@@ -215,7 +217,7 @@
     [riverSounds prepareToPlay];
     [riverSounds play];
     r=self.size.width*umnozak/2.4;
-    for (float kk=0; kk<M_PI*2; kk+=M_PI/6) {
+    for (float kk=0.1; kk<M_PI*2; kk+=M_PI/7) {
         SKSpriteNode *kamen = [SKSpriteNode spriteNodeWithImageNamed:@"kamen6"];
         kamen.position = CGPointMake(r*cos(kk), r*sin(kk));
         kamen.size = CGSizeMake(20, 20);
@@ -319,12 +321,12 @@
         
         if (location.x < kajak.position.x)
         {
-            SKAction *lijevoRot = [SKAction rotateToAngle:0.9 duration:0.4];
+            SKAction *lijevoRot = [SKAction rotateToAngle:0.9 duration:0.3];
             [veslac runAction:lijevoRot];
         }
         else
         {
-            SKAction *desnoRot = [SKAction rotateToAngle:-0.9 duration:0.4];
+            SKAction *desnoRot = [SKAction rotateToAngle:-0.9 duration:0.3];
             [veslac runAction:desnoRot];
             
         }
@@ -572,7 +574,8 @@
         //if((a/(2*M_PI)-(float)krug>0.9 )) krug++;
         krugoviLabel.text=[NSString stringWithFormat:@"Lap:%d",krug+1];
         //win game
-        if(krug==brojKrugova){
+        /*
+        if(krug==brojKrugova ){
             //pobjeda
             [self SaveGame];
             [pljuskanje invalidate];
@@ -588,8 +591,6 @@
             [riverSounds stop];
             riverSounds = nil;
             
-            
-            
             SKScene *igra = [[winScene alloc]initWithSize:self.size];
             SKTransition *tranzicija = [SKTransition pushWithDirection:SKTransitionDirectionDown duration:1.4];
             [self.view presentScene:igra transition:tranzicija];
@@ -597,7 +598,7 @@
            
             
         }
-        
+        */
     }
     
     
@@ -629,14 +630,14 @@
 
 -(void) miciCamac2{
     
-    b-=0.0004;
+    b-=0.0005;
     bDodatak += 0.2;
-    rDodatak= sin(bDodatak)*30+50;
+    rDodatak= sin(bDodatak)*30+40;
     potezac2.position = CGPointMake(centar.position.x + (r + rDodatak) * cos(b) , centar.position.y + (r + rDodatak) * sin(b));
     float kt = atan2f(kajak2.position.y-potezac2.position.y, kajak2.position.x-potezac2.position.x)+M_PI_2;
     kajak2.zRotation = kt;
     CGFloat distance = hypotf(kajak2.position.x - potezac2.position.x, kajak2.position.y - potezac2.position.y);
-    if (distance>100) {
+    if (distance>80) {
         [kajak2.physicsBody applyImpulse:CGVectorMake(cos(kt+M_PI_2), sin(kt+M_PI_2))];
         if (kajak2.position.y<-50) {
             CGPoint pkk= kajak2.position;
@@ -713,6 +714,32 @@
         igra.scaleMode = SKSceneScaleModeAspectFill;
         SKTransition *tranzicija = [SKTransition pushWithDirection:SKTransitionDirectionDown duration:0.4];
         [self.view presentScene:igra transition:tranzicija];
+        
+    }
+    //if ([kajak intersectsNode:startCilj]) NSLog(@"dodir %.2f",(a/(2*M_PI*brojKrugova)));
+    
+    if([kajak intersectsNode:startCilj] &&  (a/(2*M_PI*brojKrugova))>0.955){
+        //pobjeda
+        NSLog(@"dodir %.2f",(a/(2*M_PI*brojKrugova)));
+        [self SaveGame];
+        [pljuskanje invalidate];
+        pljuskanje = nil;
+        [pljusKamena invalidate];
+        pljusKamena =nil;
+        [ribaTimer invalidate];
+        ribaTimer = nil;
+        [brzacTimer invalidate];
+        brzacTimer = nil;
+        [potezac2Timer invalidate];
+        potezac2Timer = nil;
+        [riverSounds stop];
+        riverSounds = nil;
+        
+        SKScene *igra = [[winScene alloc]initWithSize:self.size];
+        SKTransition *tranzicija = [SKTransition pushWithDirection:SKTransitionDirectionDown duration:1.4];
+        [self.view presentScene:igra transition:tranzicija];
+        
+        
         
     }
 
