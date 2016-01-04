@@ -9,6 +9,7 @@
 #import <SpriteKit/SpriteKit.h>
 #import "prvaScena.h"
 #import "izbornikScene.h"
+#import "izbornikKajaka.h"
 
 @interface GameScene : SKScene
 

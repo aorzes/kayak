@@ -16,6 +16,7 @@
     enduranceOn = [defaults boolForKey:@"enduranceOn"];
     brojKrugova = [defaults integerForKey:@"brojKrugova"];
     mapa = [defaults integerForKey:@"mapa"];
+    bojaKajaka = [defaults integerForKey:@"bojaKajaka"];
     if(brojKrugova == 0)
     {
         brojKrugova =3;
@@ -149,8 +150,10 @@
   //kraj izbora mape
     
    
+    NSArray *popisKajaka = @[@"kayakRed", @"kayakBlue", @"kayakYellow", @"kayakCyan", @"kayakGreen", @"kayakPurple", @"kayakWhite", @"kayakBlack"];
+    NSString *imeKajaka = popisKajaka[bojaKajaka];
     
-    kajak = [SKSpriteNode spriteNodeWithImageNamed:@"kayakRed"];
+    kajak = [SKSpriteNode spriteNodeWithImageNamed:imeKajaka];
     kajak.position = CGPointMake(self.size.width/2-40, self.size.height/2);;
     kajak.size = CGSizeMake(20, 80);
     kajak.zPosition=4;
@@ -178,7 +181,12 @@
     //drugi kajak - protivnik
     if(aionoff)
     {
-        kajak2 = [SKSpriteNode spriteNodeWithImageNamed:@"kayakBlue"];
+        NSInteger bojaKajaka2 = bojaKajaka +1;
+        if (bojaKajaka2>7) {
+            bojaKajaka2 =0;
+        }
+        NSString *imeKajaka2 = popisKajaka[bojaKajaka2];
+        kajak2 = [SKSpriteNode spriteNodeWithImageNamed:imeKajaka2];
         kajak2.position = CGPointMake(self.size.width/2-65, self.size.height/2);;
         kajak2.size = CGSizeMake(20, 80);
         kajak2.zPosition=4;

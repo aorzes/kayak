@@ -35,7 +35,7 @@
 -(void)didMoveToView:(SKView *)view {
     /* Setup your scene here */
    
-    float razmak = 70;
+    float razmak = 60;
     
     [self LoadGame];
     
@@ -56,7 +56,7 @@
     bijelo.zPosition=1;
     [self addChild:bijelo];
     
-    SKSpriteNode *quick = [SKSpriteNode spriteNodeWithImageNamed:@"quickGame"];
+    SKSpriteNode *quick = [SKSpriteNode spriteNodeWithImageNamed:@"startGame"];
     quick.size = CGSizeMake(self.size.width/3, 50);
     quick.position = CGPointMake(100, self.size.height - razmak);
     quick.name = @"quick";
@@ -109,12 +109,19 @@
     selectMap.zPosition=2;
     [self addChild:selectMap];
     
-    SKSpriteNode *startGame = [SKSpriteNode spriteNodeWithImageNamed:@"startGame"];
-    startGame.size = CGSizeMake(self.size.width/3, 50);
-    startGame.position = CGPointMake(100, selectMap.position.y-razmak);
-    startGame.name = @"start";
-    startGame.zPosition=2;
-    [self addChild:startGame];
+    SKSpriteNode *selectK = [SKSpriteNode spriteNodeWithImageNamed:@"selectKayak"];
+    selectK.size = CGSizeMake(self.size.width/3, 50);
+    selectK.position = CGPointMake(100, selectMap.position.y-razmak);
+    selectK.name = @"selectK";
+    selectK.zPosition=2;
+    [self addChild:selectK];
+    
+    SKSpriteNode *leadreB = [SKSpriteNode spriteNodeWithImageNamed:@"leaderboard"];
+    leadreB.size = CGSizeMake(self.size.width/3, 50);
+    leadreB.position = CGPointMake(100, selectK.position.y-razmak);
+    leadreB.name = @"leaderboard";
+    leadreB.zPosition=2;
+    [self addChild:leadreB];
     
     osovina = [SKShapeNode shapeNodeWithCircleOfRadius:2];
     osovina.fillColor = [UIColor whiteColor];
@@ -238,8 +245,8 @@
         }
 
 
-        if ([node.name isEqualToString:@"start"]) {
-            SKScene *igra = [[winScene alloc]initWithSize:self.size];
+        if ([node.name isEqualToString:@"selectK"]) {
+            SKScene *igra = [[izbornikKajaka alloc]initWithSize:self.size];
             igra.scaleMode = SKSceneScaleModeAspectFill;
             SKTransition *tranzicija = [SKTransition pushWithDirection:SKTransitionDirectionDown duration:0.4];
             [self.view presentScene:igra transition:tranzicija];

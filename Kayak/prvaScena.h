@@ -42,7 +42,7 @@
     NSTimer *potezac2Timer;
    
     double ukupnoVrijeme;
-    
+    NSInteger bojaKajaka;
     
     double impuls, dkut, kut;
     AVAudioPlayer *riverSounds;

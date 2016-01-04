@@ -93,6 +93,9 @@
 		ECCAE0401C39CC3600E31B7E /* staza4ico.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE03F1C39CC3600E31B7E /* staza4ico.png */; };
 		ECCAE0421C39CC4400E31B7E /* staza5ico.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0411C39CC4400E31B7E /* staza5ico.png */; };
 		ECCAE0441C39E49700E31B7E /* staza2.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0431C39E49700E31B7E /* staza2.png */; };
+		ECCAE0471C3AE79B00E31B7E /* izbornikKajaka.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCAE0461C3AE79B00E31B7E /* izbornikKajaka.m */; };
+		ECCAE0491C3AF19900E31B7E /* leaderboard.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0481C3AF19900E31B7E /* leaderboard.png */; };
+		ECCAE04B1C3AF1AF00E31B7E /* selectKayak.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE04A1C3AF1AF00E31B7E /* selectKayak.png */; };
 		ECD2C6B51C2738CB00A96B7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6B41C2738CB00A96B7F /* main.m */; };
 		ECD2C6B81C2738CB00A96B7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6B71C2738CB00A96B7F /* AppDelegate.m */; };
 		ECD2C6BB1C2738CB00A96B7F /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6BA1C2738CB00A96B7F /* GameScene.m */; };
@@ -202,6 +205,10 @@
 		ECCAE03F1C39CC3600E31B7E /* staza4ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = staza4ico.png; sourceTree = "<group>"; };
 		ECCAE0411C39CC4400E31B7E /* staza5ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = staza5ico.png; sourceTree = "<group>"; };
 		ECCAE0431C39E49700E31B7E /* staza2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = staza2.png; sourceTree = "<group>"; };
+		ECCAE0451C3AE79B00E31B7E /* izbornikKajaka.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = izbornikKajaka.h; sourceTree = "<group>"; };
+		ECCAE0461C3AE79B00E31B7E /* izbornikKajaka.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = izbornikKajaka.m; sourceTree = "<group>"; };
+		ECCAE0481C3AF19900E31B7E /* leaderboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaderboard.png; sourceTree = "<group>"; };
+		ECCAE04A1C3AF1AF00E31B7E /* selectKayak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectKayak.png; sourceTree = "<group>"; };
 		ECD2C6B01C2738CB00A96B7F /* Kayak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kayak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD2C6B41C2738CB00A96B7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ECD2C6B61C2738CB00A96B7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -240,6 +247,8 @@
 		ECCADF4C1C33F62100E31B7E /* izbornik */ = {
 			isa = PBXGroup;
 			children = (
+				ECCAE0481C3AF19900E31B7E /* leaderboard.png */,
+				ECCAE04A1C3AF1AF00E31B7E /* selectKayak.png */,
 				ECCAE0391C39CC1900E31B7E /* staza1ico.png */,
 				ECCAE03B1C39CC2200E31B7E /* staza2ico.png */,
 				ECCAE03D1C39CC2E00E31B7E /* staza3ico.png */,
@@ -385,6 +394,8 @@
 				ECCADFE51C3541A500E31B7E /* winScene.m */,
 				ECCADFE11C353B2700E31B7E /* fallScene.h */,
 				ECCADFE21C353B2700E31B7E /* fallScene.m */,
+				ECCAE0451C3AE79B00E31B7E /* izbornikKajaka.h */,
+				ECCAE0461C3AE79B00E31B7E /* izbornikKajaka.m */,
 				ECCADFFF1C3717A300E31B7E /* izbornikScene.h */,
 				ECCAE0001C3717B800E31B7E /* izbornikScene.m */,
 				ECCADFDC1C347B2000E31B7E /* prvaScena.h */,
@@ -530,6 +541,7 @@
 				ECCADF821C342B1200E31B7E /* timePerLap.png in Resources */,
 				ECCADFE81C3550B100E31B7E /* fallPodloga.png in Resources */,
 				ECCADFDA1C3479AF00E31B7E /* MyParticle.sks in Resources */,
+				ECCAE0491C3AF19900E31B7E /* leaderboard.png in Resources */,
 				ECCADFD11C34782400E31B7E /* brzac10.png in Resources */,
 				ECD2C6EC1C275D7E00A96B7F /* kamen6.png in Resources */,
 				ECD2C6D41C273B5500A96B7F /* uvodna.png in Resources */,
@@ -571,6 +583,7 @@
 				ECCADF7B1C342B1200E31B7E /* aiOff.png in Resources */,
 				ECCADFBA1C3477F900E31B7E /* start.png in Resources */,
 				ECCAE0401C39CC3600E31B7E /* staza4ico.png in Resources */,
+				ECCAE04B1C3AF1AF00E31B7E /* selectKayak.png in Resources */,
 				ECCADFF41C36F2FC00E31B7E /* zemlja5U.png in Resources */,
 				ECD2C6C81C2738CB00A96B7F /* LaunchScreen.storyboard in Resources */,
 				ECCAE02A1C37FBD300E31B7E /* staza3.png in Resources */,
@@ -601,6 +614,7 @@
 				ECD2C6BB1C2738CB00A96B7F /* GameScene.m in Sources */,
 				ECCADFE31C353B2700E31B7E /* fallScene.m in Sources */,
 				ECD2C6B51C2738CB00A96B7F /* main.m in Sources */,
+				ECCAE0471C3AE79B00E31B7E /* izbornikKajaka.m in Sources */,
 				ECCADFDE1C347B2000E31B7E /* prvaScena.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
