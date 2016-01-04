@@ -96,6 +96,10 @@
 		ECCAE0471C3AE79B00E31B7E /* izbornikKajaka.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCAE0461C3AE79B00E31B7E /* izbornikKajaka.m */; };
 		ECCAE0491C3AF19900E31B7E /* leaderboard.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0481C3AF19900E31B7E /* leaderboard.png */; };
 		ECCAE04B1C3AF1AF00E31B7E /* selectKayak.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE04A1C3AF1AF00E31B7E /* selectKayak.png */; };
+		ECCAE04D1C3B2B2900E31B7E /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCAE04C1C3B2B2900E31B7E /* Social.framework */; };
+		ECCAE04F1C3B2B4100E31B7E /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCAE04E1C3B2B4100E31B7E /* Twitter.framework */; };
+		ECCAE0551C3B2F1C00E31B7E /* twiter.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0541C3B2F1C00E31B7E /* twiter.png */; };
+		ECCAE0571C3B2F2F00E31B7E /* Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0561C3B2F2F00E31B7E /* Facebook.png */; };
 		ECD2C6B51C2738CB00A96B7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6B41C2738CB00A96B7F /* main.m */; };
 		ECD2C6B81C2738CB00A96B7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6B71C2738CB00A96B7F /* AppDelegate.m */; };
 		ECD2C6BB1C2738CB00A96B7F /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6BA1C2738CB00A96B7F /* GameScene.m */; };
@@ -209,6 +213,10 @@
 		ECCAE0461C3AE79B00E31B7E /* izbornikKajaka.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = izbornikKajaka.m; sourceTree = "<group>"; };
 		ECCAE0481C3AF19900E31B7E /* leaderboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaderboard.png; sourceTree = "<group>"; };
 		ECCAE04A1C3AF1AF00E31B7E /* selectKayak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectKayak.png; sourceTree = "<group>"; };
+		ECCAE04C1C3B2B2900E31B7E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		ECCAE04E1C3B2B4100E31B7E /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		ECCAE0541C3B2F1C00E31B7E /* twiter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twiter.png; sourceTree = "<group>"; };
+		ECCAE0561C3B2F2F00E31B7E /* Facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Facebook.png; sourceTree = "<group>"; };
 		ECD2C6B01C2738CB00A96B7F /* Kayak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kayak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD2C6B41C2738CB00A96B7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ECD2C6B61C2738CB00A96B7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -237,6 +245,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECCAE04F1C3B2B4100E31B7E /* Twitter.framework in Frameworks */,
+				ECCAE04D1C3B2B2900E31B7E /* Social.framework in Frameworks */,
 				ECCADFD61C34790B00E31B7E /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,6 +378,8 @@
 		ECD2C6A71C2738CB00A96B7F = {
 			isa = PBXGroup;
 			children = (
+				ECCAE04E1C3B2B4100E31B7E /* Twitter.framework */,
+				ECCAE04C1C3B2B2900E31B7E /* Social.framework */,
 				ECCADFD51C34790B00E31B7E /* AVFoundation.framework */,
 				ECCADFD21C34783D00E31B7E /* zvukovi */,
 				ECD2C6D21C273A0600A96B7F /* slike */,
@@ -441,6 +453,8 @@
 				ECD2C6E51C275D7E00A96B7F /* kamen5.png */,
 				ECD2C6E61C275D7E00A96B7F /* kamen6.png */,
 				ECD2C6ED1C27609700A96B7F /* voda.png */,
+				ECCAE0561C3B2F2F00E31B7E /* Facebook.png */,
+				ECCAE0541C3B2F1C00E31B7E /* twiter.png */,
 			);
 			name = slike;
 			sourceTree = "<group>";
@@ -524,6 +538,7 @@
 				ECCADFEA1C3561D200E31B7E /* winPodloga.png in Resources */,
 				ECCAE0141C375DB000E31B7E /* zemlja2.png in Resources */,
 				ECCADFCD1C34782400E31B7E /* brzac6.png in Resources */,
+				ECCAE0571C3B2F2F00E31B7E /* Facebook.png in Resources */,
 				ECCAE0281C37FBB800E31B7E /* zemlja3U.png in Resources */,
 				ECCADFB71C3477AE00E31B7E /* zemlja4.png in Resources */,
 				ECCADFC71C34782400E31B7E /* brzac0.png in Resources */,
@@ -559,6 +574,7 @@
 				ECCAE0421C39CC4400E31B7E /* staza5ico.png in Resources */,
 				ECD2C6EB1C275D7E00A96B7F /* kamen5.png in Resources */,
 				ECCAE03A1C39CC1900E31B7E /* staza1ico.png in Resources */,
+				ECCAE0551C3B2F1C00E31B7E /* twiter.png in Resources */,
 				ECCADFE01C3488CB00E31B7E /* kajakB.png in Resources */,
 				ECCADF881C3445E000E31B7E /* enduranceOn.png in Resources */,
 				ECCADF951C34746200E31B7E /* kayakGreen.png in Resources */,

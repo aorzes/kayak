@@ -7,6 +7,8 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import <Social/Social.h>
+#import <Twitter/Twitter.h>
 #import "GameScene.h"
 
 

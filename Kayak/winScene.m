@@ -114,7 +114,46 @@
     
     
     
+    
+    
+    
    }
+
+-(UIImage*)snapshot
+{
+    UIGraphicsBeginImageContextWithOptions(self.view.frame.size, YES, [UIScreen mainScreen].scale);
+    [self.view drawViewHierarchyInRect:self.view.bounds afterScreenUpdates:YES];
+    UIImage *viewImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return viewImage;
+}
+
+- (void)facebookShare{
+    
+    UIImage *faceImage=[self snapshot];
+    SLComposeViewController *mySLComposeSheet;
+    mySLComposeSheet=[[SLComposeViewController alloc] init];
+    mySLComposeSheet=[SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+    [mySLComposeSheet addURL:[NSURL URLWithString:@"https://itunes.apple.com/us/app/marble-magic/id903395615?l=hr&ls=1&mt=8"]];
+    [mySLComposeSheet setInitialText:@""];
+    [mySLComposeSheet addImage:faceImage];
+    UIViewController *vc=self.view.window.rootViewController;
+    [vc presentViewController: mySLComposeSheet animated:YES completion:NULL];
+    
+}
+- (void)twitterShare{
+    
+    UIImage *twittImage=[self snapshot];
+    SLComposeViewController *mySLComposeSheet;
+    mySLComposeSheet=[[SLComposeViewController alloc] init];
+    mySLComposeSheet=[SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+    [mySLComposeSheet addURL:[NSURL URLWithString:@"https://itunes.apple.com/us/app/highchicken/id835898711?mt=8"]];
+    [mySLComposeSheet setInitialText:@""];
+    [mySLComposeSheet addImage:twittImage];
+    UIViewController *vc=self.view.window.rootViewController;
+    [vc presentViewController: mySLComposeSheet animated:YES completion:NULL];
+    
+}
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
