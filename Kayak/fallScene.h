@@ -11,5 +11,10 @@
 
 
 @interface fallScene : SKScene
+{
 
+    float a;
+    bool enduranceOn;
+    NSInteger novac;
+}
 @end

@@ -10,10 +10,18 @@
 
 @implementation fallScene
 
+
+-(void)LoadGame{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    a = [defaults floatForKey:@"akrug"];
+    enduranceOn = [defaults boolForKey:@"enduranceOn"];
+    novac = [defaults integerForKey:@"novac"];
+}
+
 -(void)didMoveToView:(SKView *)view {
     /* Setup your scene here */
     
-    
+    [self LoadGame];
     SKSpriteNode *podloga = [SKSpriteNode spriteNodeWithImageNamed:@"fallPodloga"];
     podloga.size = CGSizeMake(self.size.width, self.size.height);
     podloga.position = CGPointMake(self.size.width/2, self.size.height/2);
@@ -28,6 +36,23 @@
     quick.name = @"start";
     quick.zPosition=2;
     [self addChild:quick];
+    if (enduranceOn) {
+        SKLabelNode *brojKrugovaLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+        brojKrugovaLabel.text=[NSString stringWithFormat:@"Laps: %.2f",a/(2*M_PI)];
+        brojKrugovaLabel.fontSize = 16;
+        brojKrugovaLabel.position = CGPointMake(self.size.width/2, self.frame.size.height-120);
+        brojKrugovaLabel.zPosition=3;
+        [self addChild:brojKrugovaLabel];
+        
+        SKLabelNode *novacLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+        novacLabel.text=[NSString stringWithFormat:@"Mony: %ld $",(long)novac];
+        novacLabel.fontSize = 16;
+        novacLabel.position = CGPointMake(self.size.width/2, self.frame.size.height-150);
+        novacLabel.zPosition=3;
+        [self addChild:novacLabel];
+
+    }
+        
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {

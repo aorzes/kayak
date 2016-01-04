@@ -30,6 +30,7 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setFloat:ukupnoVrijeme forKey:@"ukupnoVrijeme"];
     [defaults setInteger:novac forKey:@"novac"];
+    [defaults setFloat:a forKey:@"akrug"];
     [defaults synchronize];
 }
 
@@ -620,10 +621,7 @@
     
 }
 
--(void) dealloc
-{
-    NSLog(@"dealloc: %@", self);
-}
+
 
 -(void) miciCamac{
     kut+=dkut;
@@ -727,6 +725,7 @@
         [brzacTimer invalidate];
         [potezac2Timer invalidate];
         [riverSounds stop];
+        [self SaveGame];
         SKScene *igra = [[fallScene alloc]initWithSize:self.size];
         igra.scaleMode = SKSceneScaleModeAspectFill;
         SKTransition *tranzicija = [SKTransition pushWithDirection:SKTransitionDirectionDown duration:0.4];
@@ -735,8 +734,8 @@
     }
     //if ([kajak intersectsNode:startCilj]) NSLog(@"dodir %.2f",(a/(2*M_PI*brojKrugova)));
     
-    if([kajak intersectsNode:startCilj] &&  (a/(2*M_PI*brojKrugova))>0.955){
-        //pobjeda
+    if([kajak intersectsNode:startCilj] && (a/(2*M_PI*brojKrugova))>0.955 && !enduranceOn){
+        //pobjeda win game
         NSLog(@"dodir %.2f",(a/(2*M_PI*brojKrugova)));
         [self SaveGame];
         [pljuskanje invalidate];
