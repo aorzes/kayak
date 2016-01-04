@@ -85,8 +85,14 @@
 		ECCAE02A1C37FBD300E31B7E /* staza3.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0291C37FBD300E31B7E /* staza3.png */; };
 		ECCAE02C1C37FED900E31B7E /* staza1.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE02B1C37FED900E31B7E /* staza1.png */; };
 		ECCAE0301C389BBB00E31B7E /* voda1.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE02F1C389BBB00E31B7E /* voda1.png */; };
-		ECCAE0321C389E7700E31B7E /* staza2.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0311C389E7700E31B7E /* staza2.png */; };
 		ECCAE0341C389E9500E31B7E /* zemlja2U.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0331C389E9500E31B7E /* zemlja2U.png */; };
+		ECCAE0381C39AB9000E31B7E /* naslovna.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0371C39AB9000E31B7E /* naslovna.png */; };
+		ECCAE03A1C39CC1900E31B7E /* staza1ico.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0391C39CC1900E31B7E /* staza1ico.png */; };
+		ECCAE03C1C39CC2200E31B7E /* staza2ico.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE03B1C39CC2200E31B7E /* staza2ico.png */; };
+		ECCAE03E1C39CC2E00E31B7E /* staza3ico.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE03D1C39CC2E00E31B7E /* staza3ico.png */; };
+		ECCAE0401C39CC3600E31B7E /* staza4ico.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE03F1C39CC3600E31B7E /* staza4ico.png */; };
+		ECCAE0421C39CC4400E31B7E /* staza5ico.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0411C39CC4400E31B7E /* staza5ico.png */; };
+		ECCAE0441C39E49700E31B7E /* staza2.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0431C39E49700E31B7E /* staza2.png */; };
 		ECD2C6B51C2738CB00A96B7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6B41C2738CB00A96B7F /* main.m */; };
 		ECD2C6B81C2738CB00A96B7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6B71C2738CB00A96B7F /* AppDelegate.m */; };
 		ECD2C6BB1C2738CB00A96B7F /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6BA1C2738CB00A96B7F /* GameScene.m */; };
@@ -188,8 +194,14 @@
 		ECCAE0291C37FBD300E31B7E /* staza3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = staza3.png; sourceTree = "<group>"; };
 		ECCAE02B1C37FED900E31B7E /* staza1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = staza1.png; sourceTree = "<group>"; };
 		ECCAE02F1C389BBB00E31B7E /* voda1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voda1.png; sourceTree = "<group>"; };
-		ECCAE0311C389E7700E31B7E /* staza2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = staza2.png; sourceTree = "<group>"; };
 		ECCAE0331C389E9500E31B7E /* zemlja2U.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zemlja2U.png; sourceTree = "<group>"; };
+		ECCAE0371C39AB9000E31B7E /* naslovna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = naslovna.png; sourceTree = "<group>"; };
+		ECCAE0391C39CC1900E31B7E /* staza1ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = staza1ico.png; sourceTree = "<group>"; };
+		ECCAE03B1C39CC2200E31B7E /* staza2ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = staza2ico.png; sourceTree = "<group>"; };
+		ECCAE03D1C39CC2E00E31B7E /* staza3ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = staza3ico.png; sourceTree = "<group>"; };
+		ECCAE03F1C39CC3600E31B7E /* staza4ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = staza4ico.png; sourceTree = "<group>"; };
+		ECCAE0411C39CC4400E31B7E /* staza5ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = staza5ico.png; sourceTree = "<group>"; };
+		ECCAE0431C39E49700E31B7E /* staza2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = staza2.png; sourceTree = "<group>"; };
 		ECD2C6B01C2738CB00A96B7F /* Kayak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kayak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD2C6B41C2738CB00A96B7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ECD2C6B61C2738CB00A96B7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -228,6 +240,11 @@
 		ECCADF4C1C33F62100E31B7E /* izbornik */ = {
 			isa = PBXGroup;
 			children = (
+				ECCAE0391C39CC1900E31B7E /* staza1ico.png */,
+				ECCAE03B1C39CC2200E31B7E /* staza2ico.png */,
+				ECCAE03D1C39CC2E00E31B7E /* staza3ico.png */,
+				ECCAE03F1C39CC3600E31B7E /* staza4ico.png */,
+				ECCAE0411C39CC4400E31B7E /* staza5ico.png */,
 				ECCAE0041C371B1900E31B7E /* iOkvir.png */,
 				ECCAE0081C37254B00E31B7E /* check.png */,
 				ECCAE0061C371E2E00E31B7E /* back.png */,
@@ -285,7 +302,7 @@
 				ECCAE02B1C37FED900E31B7E /* staza1.png */,
 				ECCADFF91C37035700E31B7E /* zemlja1.png */,
 				ECCADFFA1C37035700E31B7E /* zemlja1U.png */,
-				ECCAE0311C389E7700E31B7E /* staza2.png */,
+				ECCAE0431C39E49700E31B7E /* staza2.png */,
 				ECCAE0331C389E9500E31B7E /* zemlja2U.png */,
 				ECCAE0121C375DB000E31B7E /* zemlja2.png */,
 				ECCAE0291C37FBD300E31B7E /* staza3.png */,
@@ -402,6 +419,7 @@
 				ECCADF891C3473B900E31B7E /* Kajaci */,
 				ECCADF4C1C33F62100E31B7E /* izbornik */,
 				ECD2C6D31C273B5500A96B7F /* uvodna.png */,
+				ECCAE0371C39AB9000E31B7E /* naslovna.png */,
 				ECCADFEB1C35891B00E31B7E /* pehar.png */,
 				ECCADFE71C3550B100E31B7E /* fallPodloga.png */,
 				ECCADFE91C3561D200E31B7E /* winPodloga.png */,
@@ -478,9 +496,11 @@
 				ECD2C6E91C275D7E00A96B7F /* kamen3.png in Resources */,
 				ECCADF7F1C342B1200E31B7E /* quickGame.png in Resources */,
 				ECCADFCF1C34782400E31B7E /* brzac8.png in Resources */,
+				ECCAE0441C39E49700E31B7E /* staza2.png in Resources */,
 				ECCADF981C34746200E31B7E /* kayakWhite.png in Resources */,
 				ECCADF991C34746200E31B7E /* kayakYellow.png in Resources */,
 				ECCADFD01C34782400E31B7E /* brzac9.png in Resources */,
+				ECCAE03C1C39CC2200E31B7E /* staza2ico.png in Resources */,
 				ECCADF771C342B1200E31B7E /* 2lap.png in Resources */,
 				ECCAE0031C37192400E31B7E /* voda4.png in Resources */,
 				ECD2C6EA1C275D7E00A96B7F /* kamen4.png in Resources */,
@@ -515,6 +535,7 @@
 				ECD2C6D41C273B5500A96B7F /* uvodna.png in Resources */,
 				ECCADFDB1C3479AF00E31B7E /* spark.png in Resources */,
 				ECD2C6BD1C2738CB00A96B7F /* GameScene.sks in Resources */,
+				ECCAE03E1C39CC2E00E31B7E /* staza3ico.png in Resources */,
 				ECCADFF31C36F2FC00E31B7E /* zemlja5.png in Resources */,
 				ECCADFEE1C358B8600E31B7E /* newGame.png in Resources */,
 				ECCADF7D1C342B1200E31B7E /* endurance.png in Resources */,
@@ -523,13 +544,15 @@
 				ECCADFAE1C34774B00E31B7E /* riba.atlas in Resources */,
 				ECCADF761C342B1200E31B7E /* 1lap.png in Resources */,
 				ECCADFA81C34747700E31B7E /* veslacWhite.png in Resources */,
+				ECCAE0421C39CC4400E31B7E /* staza5ico.png in Resources */,
 				ECD2C6EB1C275D7E00A96B7F /* kamen5.png in Resources */,
+				ECCAE03A1C39CC1900E31B7E /* staza1ico.png in Resources */,
 				ECCADFE01C3488CB00E31B7E /* kajakB.png in Resources */,
 				ECCADF881C3445E000E31B7E /* enduranceOn.png in Resources */,
 				ECCADF951C34746200E31B7E /* kayakGreen.png in Resources */,
 				ECCADFCA1C34782400E31B7E /* brzac3.png in Resources */,
 				ECCAE0071C371E2E00E31B7E /* back.png in Resources */,
-				ECCAE0321C389E7700E31B7E /* staza2.png in Resources */,
+				ECCAE0381C39AB9000E31B7E /* naslovna.png in Resources */,
 				ECCADFA91C34747700E31B7E /* veslacYellow.png in Resources */,
 				ECCAE01B1C37E94800E31B7E /* zemlja3.png in Resources */,
 				ECCADF801C342B1200E31B7E /* selectMap.png in Resources */,
@@ -547,6 +570,7 @@
 				ECCAE0091C37254B00E31B7E /* check.png in Resources */,
 				ECCADF7B1C342B1200E31B7E /* aiOff.png in Resources */,
 				ECCADFBA1C3477F900E31B7E /* start.png in Resources */,
+				ECCAE0401C39CC3600E31B7E /* staza4ico.png in Resources */,
 				ECCADFF41C36F2FC00E31B7E /* zemlja5U.png in Resources */,
 				ECD2C6C81C2738CB00A96B7F /* LaunchScreen.storyboard in Resources */,
 				ECCAE02A1C37FBD300E31B7E /* staza3.png in Resources */,

@@ -42,6 +42,8 @@
     quick.zPosition=2;
     [self addChild:quick];
     
+    NSArray *popisIkona = @[@"staza1ico", @"staza2ico", @"staza3ico", @"staza4ico", @"staza5ico"];
+    
     float velicina = (self.size.height - 200) / 5;
     float polozaj = self.size.height - 150;
     for (int i=0; i<5; i++) {
@@ -52,6 +54,14 @@
         okvir.name = [NSString stringWithFormat:@"okvir%d",i];
         okvir.zPosition=3;
         [self addChild:okvir];
+        
+        SKSpriteNode *ikona = [SKSpriteNode spriteNodeWithImageNamed:popisIkona[i]];
+        ikona.size = CGSizeMake(okvir.size.width/2, okvir.size.height-10);
+        ikona.position = CGPointMake(-20, 0);
+        ikona.name = @"ikona";
+        ikona.zPosition=-1;
+        [okvir addChild:ikona];
+        
         SKSpriteNode *check = [SKSpriteNode spriteNodeWithImageNamed:@"check"];
         check.size = CGSizeMake(25, 25);
         check.position = CGPointMake(okvir.size.width/2-30, 0);
@@ -73,7 +83,10 @@
         if ([ostatak isEqualToString:@"okvir"]) {
             for(SKNode *dnod in cnod.children)
             {
-                dnod.alpha = 0;
+                if ([dnod.name isEqualToString: @"check"]) {
+                    dnod.alpha = 0;
+                }
+                
             }
 
         }

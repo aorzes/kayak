@@ -13,6 +13,9 @@
 @interface winScene : SKScene
 {
     double ukupnoVrijeme;
+    double najboljeVrijeme;
     NSInteger  brojKrugova;
+    NSInteger novac;
+    
 }
 @end

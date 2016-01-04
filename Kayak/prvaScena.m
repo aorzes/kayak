@@ -28,6 +28,7 @@
 -(void)SaveGame {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setFloat:ukupnoVrijeme forKey:@"ukupnoVrijeme"];
+    [defaults setInteger:novac forKey:@"novac"];
     [defaults synchronize];
 }
 
@@ -52,6 +53,13 @@
     novciLabel.position = CGPointMake(50, self.frame.size.height-80);
     novciLabel.zPosition=10;
     [self addChild:novciLabel];
+    
+    timeLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+    timeLabel.text=[NSString stringWithFormat:@"Time:%.1f",ukupnoVrijeme];
+    timeLabel.fontSize = 20;
+    timeLabel.position = CGPointMake(self.frame.size.width-60, self.frame.size.height-80);
+    timeLabel.zPosition=10;
+    [self addChild:timeLabel];
     
     float umnozak=6.9;
     self.physicsWorld.gravity = CGVectorMake(0, -0.2);
@@ -217,7 +225,7 @@
     [riverSounds prepareToPlay];
     [riverSounds play];
     r=self.size.width*umnozak/2.4;
-    for (float kk=0.1; kk<M_PI*2; kk+=M_PI/7) {
+    for (float kk=0.01; kk<M_PI*2; kk+=M_PI/7) {
         SKSpriteNode *kamen = [SKSpriteNode spriteNodeWithImageNamed:@"kamen6"];
         kamen.position = CGPointMake(r*cos(kk), r*sin(kk));
         kamen.size = CGSizeMake(20, 20);
@@ -655,6 +663,7 @@
 
 -(void) miciRibu{
     ukupnoVrijeme+=0.1;
+    timeLabel.text=[NSString stringWithFormat:@"%.1f''",ukupnoVrijeme];
     CGPoint pr=riba.position;
     pr.y-=1;
     if(pr.y<-20) pr.y= self.size.height + 20;

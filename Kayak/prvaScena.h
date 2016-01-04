@@ -16,7 +16,8 @@
 {
     SKLabelNode *krugoviLabel;
     SKLabelNode *novciLabel;
-    
+    SKLabelNode *timeLabel;
+        
     SKNode *centar;
     SKSpriteNode *myWorld;
     SKSpriteNode *unutarnja;
@@ -41,6 +42,7 @@
     NSTimer *potezac2Timer;
    
     double ukupnoVrijeme;
+    
     
     double impuls, dkut, kut;
     AVAudioPlayer *riverSounds;

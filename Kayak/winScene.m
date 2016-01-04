@@ -15,15 +15,33 @@
 -(void)LoadGame{
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     ukupnoVrijeme = [defaults floatForKey:@"ukupnoVrijeme"];
+    najboljeVrijeme = [defaults floatForKey:@"najboljeVrijeme"];
     brojKrugova = [defaults integerForKey:@"brojKrugova"];
-    
+    novac = [defaults integerForKey:@"novac"];
 }
 
+-(void)SaveGame {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setFloat:najboljeVrijeme forKey:@"najboljeVrijeme"];
+    [defaults synchronize];
+    
+}
 
 -(void)didMoveToView:(SKView *)view {
     /* Setup your scene here */
     
     [self LoadGame];
+    UIColor *bojaNajboljeg = [UIColor redColor];
+    UIColor *bojaNovog = [UIColor whiteColor];
+    BOOL blinkaj = false;
+    if (najboljeVrijeme==0 || ukupnoVrijeme/brojKrugova<najboljeVrijeme)
+    {
+        najboljeVrijeme = ukupnoVrijeme/brojKrugova;
+        bojaNajboljeg = [UIColor whiteColor];
+        bojaNovog = [UIColor redColor];
+        [self SaveGame];
+        blinkaj = true;
+    }
     
     SKSpriteNode *podloga = [SKSpriteNode spriteNodeWithImageNamed:@"winPodloga"];
     podloga.size = CGSizeMake(self.size.width, self.size.height);
@@ -41,7 +59,7 @@
 
     SKSpriteNode *pehar = [SKSpriteNode spriteNodeWithImageNamed:@"pehar"];
     pehar.size = CGSizeMake(100, 150);
-    pehar.position = CGPointMake(self.size.width/2, 80);
+    pehar.position = CGPointMake(self.size.width/2, 150);
     pehar.name = @"pehar";
     pehar.zPosition=2;
     [self addChild:pehar];
@@ -60,13 +78,41 @@
     lapsLabel.zPosition=3;
     [self addChild:lapsLabel];
 
+    SKAction *povecaj = [SKAction scaleTo:1.5 duration:1.0];
+    SKAction *smanji = [SKAction scaleTo:1.0 duration:0.5];
+    SKAction *zajedno = [SKAction sequence:@[povecaj,smanji]];
+    SKAction *ponavljaj = [SKAction repeatActionForever:zajedno];
     
     SKLabelNode *pokruguLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
     pokruguLabel.text=[NSString stringWithFormat:@"Per lap: %.2f",ukupnoVrijeme/brojKrugova];
+    pokruguLabel.fontColor = bojaNovog;
+    pokruguLabel.colorBlendFactor = 1;
     pokruguLabel.fontSize = 16;
     pokruguLabel.position = CGPointMake(self.size.width/2, self.frame.size.height-160);
     pokruguLabel.zPosition=3;
     [self addChild:pokruguLabel];
+    
+    if (blinkaj) {
+        [pokruguLabel runAction:ponavljaj];
+    }
+    
+    SKLabelNode *novacLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+    novacLabel.text=[NSString stringWithFormat:@"Mony: %ld $",(long)novac];
+    novacLabel.fontSize = 16;
+    novacLabel.position = CGPointMake(self.size.width/2, self.frame.size.height-180);
+    novacLabel.zPosition=3;
+    [self addChild:novacLabel];
+    
+    SKLabelNode *najboljeLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+    najboljeLabel.text=[NSString stringWithFormat:@"Best time: %.2f",najboljeVrijeme];
+    najboljeLabel.fontColor = bojaNajboljeg;
+    najboljeLabel.colorBlendFactor = 1;
+    najboljeLabel.fontSize = 16;
+    najboljeLabel.position = CGPointMake(self.size.width/2, self.frame.size.height-200);
+    najboljeLabel.zPosition=3;
+    [self addChild:najboljeLabel];
+    
+    
     
    }
 
