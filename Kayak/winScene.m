@@ -113,10 +113,6 @@
     [self addChild:najboljeLabel];
     
     
-    
-    
-    
-    
    }
 
 -(UIImage*)snapshot
