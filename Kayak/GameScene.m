@@ -8,6 +8,7 @@
 
 #import "GameScene.h"
 
+
 @implementation GameScene
 
 -(void)LoadGame{
@@ -30,6 +31,9 @@
     [defaults setInteger:brojKrugova forKey:@"brojKrugova"];
     [defaults synchronize];
 }
+
+
+
 
 
 -(void)didMoveToView:(SKView *)view {
@@ -208,8 +212,63 @@
     bijelo2.zPosition=1;
     [self addChild:bijelo2];
     
+    [[gameCenterFiles sharedInstance]authenticateLocalUser];
+    
     
 }
+
+
+- (void)showLeaderboardOnViewController:(UIViewController*)viewController
+{
+    GKGameCenterViewController *gameCenterController = [[GKGameCenterViewController alloc] init];
+    if (gameCenterController != nil) {
+        gameCenterController.gameCenterDelegate = self;
+        gameCenterController.viewState = GKGameCenterViewControllerStateLeaderboards;
+        gameCenterController.leaderboardIdentifier = @"maxScore";
+        
+        [viewController presentViewController: gameCenterController animated: YES completion:nil];
+    }
+}
+
+
+
+
+- (void) presentLeaderboards {
+    GKGameCenterViewController* gameCenterController = [[GKGameCenterViewController alloc] init];
+    gameCenterController.viewState = GKGameCenterViewControllerStateLeaderboards;
+    gameCenterController.gameCenterDelegate = self;
+    
+    UIViewController *vc=self.view.window.rootViewController;
+    [vc presentViewController:gameCenterController animated:YES completion:nil];
+    
+    
+}
+
+
+
+
+- (void)gameCenterViewControllerDidFinish:(GKGameCenterViewController *)gameCenterViewController
+{
+    [gameCenterViewController dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+}
+
+
+
+-(void)reportScore{
+    
+    GKScore *highScoreS = [[GKScore alloc]initWithLeaderboardIdentifier:@"maxScore"];
+    // highScoreS.value = maxScore;
+    
+    [GKScore reportScores:@[highScoreS] withCompletionHandler:^(NSError *error) {
+        if (error != nil) {
+            NSLog(@"%@", [error localizedDescription]);
+        }
+    }];
+}
+
+
 
 -(void) pokreniPrviLevel{
 
