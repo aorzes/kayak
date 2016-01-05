@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC3880B51C3BF887007A6B3A /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3880B41C3BF887007A6B3A /* iAd.framework */; };
+		EC3880B71C3BF906007A6B3A /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3880B61C3BF906007A6B3A /* GameKit.framework */; };
+		EC3880BA1C3BFA5C007A6B3A /* gameCenterFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3880B91C3BFA5C007A6B3A /* gameCenterFiles.m */; };
 		ECCADF761C342B1200E31B7E /* 1lap.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF691C342B1200E31B7E /* 1lap.png */; };
 		ECCADF771C342B1200E31B7E /* 2lap.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF6A1C342B1200E31B7E /* 2lap.png */; };
 		ECCADF781C342B1200E31B7E /* 3lap.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCADF6B1C342B1200E31B7E /* 3lap.png */; };
@@ -119,6 +122,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC3880B41C3BF887007A6B3A /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		EC3880B61C3BF906007A6B3A /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		EC3880B81C3BFA5C007A6B3A /* gameCenterFiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameCenterFiles.h; sourceTree = "<group>"; };
+		EC3880B91C3BFA5C007A6B3A /* gameCenterFiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gameCenterFiles.m; sourceTree = "<group>"; };
 		ECCADF691C342B1200E31B7E /* 1lap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1lap.png; sourceTree = "<group>"; };
 		ECCADF6A1C342B1200E31B7E /* 2lap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2lap.png; sourceTree = "<group>"; };
 		ECCADF6B1C342B1200E31B7E /* 3lap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3lap.png; sourceTree = "<group>"; };
@@ -245,9 +252,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC3880B51C3BF887007A6B3A /* iAd.framework in Frameworks */,
 				ECCAE04F1C3B2B4100E31B7E /* Twitter.framework in Frameworks */,
 				ECCAE04D1C3B2B2900E31B7E /* Social.framework in Frameworks */,
 				ECCADFD61C34790B00E31B7E /* AVFoundation.framework in Frameworks */,
+				EC3880B71C3BF906007A6B3A /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +387,8 @@
 		ECD2C6A71C2738CB00A96B7F = {
 			isa = PBXGroup;
 			children = (
+				EC3880B61C3BF906007A6B3A /* GameKit.framework */,
+				EC3880B41C3BF887007A6B3A /* iAd.framework */,
 				ECCAE04E1C3B2B4100E31B7E /* Twitter.framework */,
 				ECCAE04C1C3B2B2900E31B7E /* Social.framework */,
 				ECCADFD51C34790B00E31B7E /* AVFoundation.framework */,
@@ -418,6 +429,8 @@
 				ECD2C6BE1C2738CB00A96B7F /* GameViewController.h */,
 				ECD2C6BF1C2738CB00A96B7F /* GameViewController.m */,
 				ECD2C6C11C2738CB00A96B7F /* Main.storyboard */,
+				EC3880B81C3BFA5C007A6B3A /* gameCenterFiles.h */,
+				EC3880B91C3BFA5C007A6B3A /* gameCenterFiles.m */,
 				ECD2C6C41C2738CB00A96B7F /* Assets.xcassets */,
 				ECD2C6C61C2738CB00A96B7F /* LaunchScreen.storyboard */,
 				ECD2C6C91C2738CB00A96B7F /* Info.plist */,
@@ -490,6 +503,12 @@
 				TargetAttributes = {
 					ECD2C6AF1C2738CB00A96B7F = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8Z7M987K48;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -629,6 +648,7 @@
 				ECD2C6B81C2738CB00A96B7F /* AppDelegate.m in Sources */,
 				ECD2C6BB1C2738CB00A96B7F /* GameScene.m in Sources */,
 				ECCADFE31C353B2700E31B7E /* fallScene.m in Sources */,
+				EC3880BA1C3BFA5C007A6B3A /* gameCenterFiles.m in Sources */,
 				ECD2C6B51C2738CB00A96B7F /* main.m in Sources */,
 				ECCAE0471C3AE79B00E31B7E /* izbornikKajaka.m in Sources */,
 				ECCADFDE1C347B2000E31B7E /* prvaScena.m in Sources */,

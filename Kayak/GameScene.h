@@ -7,11 +7,14 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import <GameplayKit/GameplayKit.h>
 #import "prvaScena.h"
 #import "izbornikScene.h"
 #import "izbornikKajaka.h"
+#import "gameCenterFiles.h"
 
-@interface GameScene : SKScene
+
+@interface GameScene : SKScene<GKGameCenterControllerDelegate>
 
 {
     SKShapeNode *osovina;

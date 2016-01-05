@@ -37,6 +37,7 @@
     return YES;
 }
 
+
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
@@ -51,6 +52,33 @@
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
 }
+
+
+
+#pragma mark iAd Delegate Methods
+
+
+-(void)bannerViewDidLoadAd:(ADBannerView *)banner{
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:1];
+    [banner setAlpha:1];
+    [UIView commitAnimations];
+    
+}
+
+
+
+
+-(void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:1];
+    [banner setAlpha:0];
+    [UIView commitAnimations];
+    
+}
+
 
 - (BOOL)prefersStatusBarHidden {
     return YES;
