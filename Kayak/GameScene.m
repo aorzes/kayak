@@ -68,7 +68,7 @@
     [self addChild:quick];
     
     spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-    [spinner setCenter:CGPointMake(quick.position.x+quick.size.width + 10, 50)]; // I do this because I'm in landscape mode
+    [spinner setCenter:CGPointMake(quick.position.x+quick.size.width + 10, razmak+30)]; // I do this because I'm in landscape mode
     [self.view addSubview:spinner];
     
     aiOnOff = [SKSpriteNode spriteNodeWithImageNamed:@"aiOn"];

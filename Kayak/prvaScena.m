@@ -248,9 +248,9 @@
     pljusKamena = [NSTimer scheduledTimerWithTimeInterval:1.5 target:self selector:@selector(tragKamena) userInfo:nil repeats:YES];
     
     //riba
-    SKTextureAtlas *ribaAtlas = [SKTextureAtlas atlasNamed:@"riba"];
+    
     NSMutableArray *tekstureRibe = [[NSMutableArray alloc]init];
-    for (int i=0; i<ribaAtlas.textureNames.count; i++) {
+    for (int i=0; i<10; i++) {
         [tekstureRibe addObject:[SKTexture textureWithImageNamed:[NSString stringWithFormat:@"riba%d",i]]];
     }
     SKAction *ribaAnim = [SKAction animateWithTextures:tekstureRibe timePerFrame:0.15];
@@ -308,9 +308,9 @@
 -(void) napraviNovcice{
     
     //novcici sloka
-    SKTextureAtlas *novciciAtlas = [SKTextureAtlas atlasNamed:@"novcici"];
+    
     NSMutableArray *tekstureNovcici = [[NSMutableArray alloc]init];
-    for (int i=0; i<novciciAtlas.textureNames.count; i++) {
+    for (int i=0; i<10; i++) {
         [tekstureNovcici addObject:[SKTexture textureWithImageNamed:[NSString stringWithFormat:@"novcic%d",i]]];
     }
     SKAction *novciciAnim = [SKAction animateWithTextures:tekstureNovcici timePerFrame:0.1];
