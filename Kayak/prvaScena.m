@@ -17,6 +17,7 @@
     brojKrugova = [defaults integerForKey:@"brojKrugova"];
     mapa = [defaults integerForKey:@"mapa"];
     bojaKajaka = [defaults integerForKey:@"bojaKajaka"];
+    ukupnoNovaca = [defaults integerForKey:@"ukupnoNovaca"];
     if(brojKrugova == 0)
     {
         brojKrugova =3;
@@ -31,6 +32,8 @@
     [defaults setFloat:ukupnoVrijeme forKey:@"ukupnoVrijeme"];
     [defaults setInteger:novac forKey:@"novac"];
     [defaults setFloat:a forKey:@"akrug"];
+    ukupnoNovaca +=novac;
+    [defaults setInteger:ukupnoNovaca forKey:@"ukupnoNovaca"];
     [defaults synchronize];
 }
 
@@ -736,7 +739,7 @@
     
     if([kajak intersectsNode:startCilj] && (a/(2*M_PI*brojKrugova))>0.955 && !enduranceOn){
         //pobjeda win game
-        NSLog(@"dodir %.2f",(a/(2*M_PI*brojKrugova)));
+       
         [self SaveGame];
         [pljuskanje invalidate];
         pljuskanje = nil;

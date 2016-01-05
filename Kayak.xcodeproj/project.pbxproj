@@ -100,7 +100,6 @@
 		ECCAE04D1C3B2B2900E31B7E /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCAE04C1C3B2B2900E31B7E /* Social.framework */; };
 		ECCAE04F1C3B2B4100E31B7E /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCAE04E1C3B2B4100E31B7E /* Twitter.framework */; };
 		ECCAE0551C3B2F1C00E31B7E /* twiter.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0541C3B2F1C00E31B7E /* twiter.png */; };
-		ECCAE0571C3B2F2F00E31B7E /* Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0561C3B2F2F00E31B7E /* Facebook.png */; };
 		ECCAE0911C3C218500E31B7E /* riba0.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0871C3C218500E31B7E /* riba0.png */; };
 		ECCAE0921C3C218500E31B7E /* riba1.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0881C3C218500E31B7E /* riba1.png */; };
 		ECCAE0931C3C218500E31B7E /* riba2.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0891C3C218500E31B7E /* riba2.png */; };
@@ -121,6 +120,7 @@
 		ECCAE0AD1C3C21B400E31B7E /* novcic7.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0A31C3C21B400E31B7E /* novcic7.png */; };
 		ECCAE0AE1C3C21B400E31B7E /* novcic8.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0A41C3C21B400E31B7E /* novcic8.png */; };
 		ECCAE0AF1C3C21B400E31B7E /* novcic9.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0A51C3C21B400E31B7E /* novcic9.png */; };
+		ECCAE0B11C3C560700E31B7E /* Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0B01C3C560700E31B7E /* Facebook.png */; };
 		ECD2C6B51C2738CB00A96B7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6B41C2738CB00A96B7F /* main.m */; };
 		ECD2C6B81C2738CB00A96B7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6B71C2738CB00A96B7F /* AppDelegate.m */; };
 		ECD2C6BB1C2738CB00A96B7F /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6BA1C2738CB00A96B7F /* GameScene.m */; };
@@ -239,7 +239,6 @@
 		ECCAE04C1C3B2B2900E31B7E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		ECCAE04E1C3B2B4100E31B7E /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		ECCAE0541C3B2F1C00E31B7E /* twiter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twiter.png; sourceTree = "<group>"; };
-		ECCAE0561C3B2F2F00E31B7E /* Facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Facebook.png; sourceTree = "<group>"; };
 		ECCAE0871C3C218500E31B7E /* riba0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = riba0.png; sourceTree = "<group>"; };
 		ECCAE0881C3C218500E31B7E /* riba1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = riba1.png; sourceTree = "<group>"; };
 		ECCAE0891C3C218500E31B7E /* riba2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = riba2.png; sourceTree = "<group>"; };
@@ -260,6 +259,7 @@
 		ECCAE0A31C3C21B400E31B7E /* novcic7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = novcic7.png; sourceTree = "<group>"; };
 		ECCAE0A41C3C21B400E31B7E /* novcic8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = novcic8.png; sourceTree = "<group>"; };
 		ECCAE0A51C3C21B400E31B7E /* novcic9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = novcic9.png; sourceTree = "<group>"; };
+		ECCAE0B01C3C560700E31B7E /* Facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Facebook.png; sourceTree = "<group>"; };
 		ECD2C6B01C2738CB00A96B7F /* Kayak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kayak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD2C6B41C2738CB00A96B7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ECD2C6B61C2738CB00A96B7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -536,7 +536,7 @@
 				ECD2C6E51C275D7E00A96B7F /* kamen5.png */,
 				ECD2C6E61C275D7E00A96B7F /* kamen6.png */,
 				ECD2C6ED1C27609700A96B7F /* voda.png */,
-				ECCAE0561C3B2F2F00E31B7E /* Facebook.png */,
+				ECCAE0B01C3C560700E31B7E /* Facebook.png */,
 				ECCAE0541C3B2F1C00E31B7E /* twiter.png */,
 			);
 			name = slike;
@@ -631,7 +631,7 @@
 				ECCADFEA1C3561D200E31B7E /* winPodloga.png in Resources */,
 				ECCAE0141C375DB000E31B7E /* zemlja2.png in Resources */,
 				ECCADFCD1C34782400E31B7E /* brzac6.png in Resources */,
-				ECCAE0571C3B2F2F00E31B7E /* Facebook.png in Resources */,
+				ECCAE0B11C3C560700E31B7E /* Facebook.png in Resources */,
 				ECCAE0281C37FBB800E31B7E /* zemlja3U.png in Resources */,
 				ECCADFB71C3477AE00E31B7E /* zemlja4.png in Resources */,
 				ECCADFC71C34782400E31B7E /* brzac0.png in Resources */,

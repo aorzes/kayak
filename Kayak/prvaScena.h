@@ -34,6 +34,7 @@
     
     float a,b,bDodatak,r,rDodatak;
     int krug;
+    NSInteger ukupnoNovaca;
     int novac;
     NSTimer *pljuskanje;
     NSTimer *pljusKamena;

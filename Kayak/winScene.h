@@ -17,7 +17,12 @@
     double ukupnoVrijeme;
     double najboljeVrijeme;
     NSInteger  brojKrugova;
+    NSInteger  ukupnoNovaca;
     NSInteger novac;
+    
+    SKSpriteNode *newGame;
+    SKSpriteNode *fbook;
+    SKSpriteNode *twit;
     
 }
 @end

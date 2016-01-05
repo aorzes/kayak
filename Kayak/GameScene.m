@@ -149,7 +149,7 @@
     Lap1.name = @"1lap";
     Lap1.zPosition=4;
     [self addChild:Lap1];
-    NSLog(@"lap1");
+   
     SKSpriteNode *Lap2 = [SKSpriteNode spriteNodeWithImageNamed:@"2lap"];
     Lap2.size = CGSizeMake(self.size.width/3, 40);
     Lap2.position = CGPointMake(self.size.width-20, timePerLap.position.y+40);
