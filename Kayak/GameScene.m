@@ -39,7 +39,7 @@
 -(void)didMoveToView:(SKView *)view {
     /* Setup your scene here */
    
-    float razmak = 60;
+    float razmak = 55;
     
     [self LoadGame];
     
@@ -62,7 +62,7 @@
     
     SKSpriteNode *quick = [SKSpriteNode spriteNodeWithImageNamed:@"startGame"];
     quick.size = CGSizeMake(self.size.width/3, 50);
-    quick.position = CGPointMake(100, self.size.height - razmak);
+    quick.position = CGPointMake(100, self.size.height - razmak-30);
     quick.name = @"quick";
     quick.zPosition=2;
     [self addChild:quick];
