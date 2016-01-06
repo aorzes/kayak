@@ -16,6 +16,7 @@
     aionoff = [defaults boolForKey:@"aionoff"];
     enduranceOn = [defaults boolForKey:@"enduranceOn"];
     brojKrugova = [defaults integerForKey:@"brojKrugova"];
+    mapa = [defaults integerForKey:@"mapa"];
     if(brojKrugova == 0)
     {
         brojKrugova =3;
@@ -29,6 +30,7 @@
     [defaults setBool:aionoff forKey:@"aionoff"];
     [defaults setBool:enduranceOn forKey:@"enduranceOn"];
     [defaults setInteger:brojKrugova forKey:@"brojKrugova"];
+    [defaults setInteger:mapa forKey:@"mapa"];
     [defaults synchronize];
 }
 
@@ -134,7 +136,7 @@
     osovina.zPosition=0;
     [self addChild:osovina];
     
-    SKSpriteNode *poluga = [SKSpriteNode spriteNodeWithImageNamed:@"poluga"];
+    poluga = [SKSpriteNode spriteNodeWithImageNamed:@"poluga"];
     poluga.size = CGSizeMake(self.size.width/3, 30);
     poluga.anchorPoint =CGPointMake(0.0, 0.5);
     poluga.position = CGPointMake(0, 0);
@@ -211,6 +213,16 @@
     bijelo2.name = @"bijelo";
     bijelo2.zPosition=1;
     [self addChild:bijelo2];
+    if (enduranceOn)
+    {
+        poluga.alpha = 0;
+        for(SKSpriteNode *nodLap in self.children){
+            if ([nodLap.name isEqualToString:@"1lap"] || [nodLap.name isEqualToString:@"2lap"] || [nodLap.name isEqualToString:@"3lap"] || [nodLap.name isEqualToString:@"4lap"] || [nodLap.name isEqualToString:@"5lap"])
+            {
+                nodLap.alpha = 0;
+            }
+        }
+    }
     
     [[gameCenterFiles sharedInstance]authenticateLocalUser];
     
@@ -329,6 +341,7 @@
             aionoff = !aionoff;
             if (aionoff) {
                 aiOnOff.texture = [SKTexture textureWithImageNamed:@"aiOn"];
+                
             }
             else{
                 aiOnOff.texture = [SKTexture textureWithImageNamed:@"aiOff"];
@@ -340,9 +353,24 @@
             enduranceOn = !enduranceOn;
             if (enduranceOn) {
                 endurance.texture = [SKTexture textureWithImageNamed:@"enduranceOn"];
+                poluga.alpha = 0;
+                for(SKSpriteNode *nodLap in self.children){
+                  if ([nodLap.name isEqualToString:@"1lap"] || [nodLap.name isEqualToString:@"2lap"] || [nodLap.name isEqualToString:@"3lap"] || [nodLap.name isEqualToString:@"4lap"] || [nodLap.name isEqualToString:@"5lap"])
+                  {
+                      nodLap.alpha = 0;
+                  }
+                }
+                
             }
             else{
                 endurance.texture = [SKTexture textureWithImageNamed:@"endurance"];
+                poluga.alpha = 1;
+                for(SKSpriteNode *nodLap in self.children){
+                    if ([nodLap.name isEqualToString:@"1lap"] || [nodLap.name isEqualToString:@"2lap"] || [nodLap.name isEqualToString:@"3lap"] || [nodLap.name isEqualToString:@"4lap"] || [nodLap.name isEqualToString:@"5lap"])
+                    {
+                        nodLap.alpha = 1;
+                    }
+                }
             }
             
         }

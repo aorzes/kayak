@@ -87,7 +87,7 @@
         lokot.name = @"lokot";
         lokot.alpha =1;
         if(mapa == 1) {lokot.alpha =0;}else{lokot.alpha =1;}
-        if (ukupnoNovaca>=i*100) {
+        if (ukupnoNovaca>=i*150) {
             lokot.alpha =0;
         }
         else

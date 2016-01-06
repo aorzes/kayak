@@ -48,21 +48,21 @@
     krugoviLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
     krugoviLabel.text=[NSString stringWithFormat:@"Lap:%d",krug];
     krugoviLabel.fontSize = 20;
-    krugoviLabel.position = CGPointMake(50, self.frame.size.height-50);
+    krugoviLabel.position = CGPointMake(50, self.frame.size.height-70);
     krugoviLabel.zPosition=10;
     [self addChild:krugoviLabel];
     
     novciLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
     novciLabel.text=[NSString stringWithFormat:@"$:%d",novac];
     novciLabel.fontSize = 20;
-    novciLabel.position = CGPointMake(50, self.frame.size.height-80);
+    novciLabel.position = CGPointMake(50, self.frame.size.height-90);
     novciLabel.zPosition=10;
     [self addChild:novciLabel];
     
     timeLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
     timeLabel.text=[NSString stringWithFormat:@"Time:%.1f",ukupnoVrijeme];
     timeLabel.fontSize = 20;
-    timeLabel.position = CGPointMake(self.frame.size.width-60, self.frame.size.height-80);
+    timeLabel.position = CGPointMake(self.frame.size.width-60, self.frame.size.height-90);
     timeLabel.zPosition=10;
     [self addChild:timeLabel];
     
@@ -737,7 +737,7 @@
     }
     //if ([kajak intersectsNode:startCilj]) NSLog(@"dodir %.2f",(a/(2*M_PI*brojKrugova)));
     
-    if([kajak intersectsNode:startCilj] && (a/(2*M_PI*brojKrugova))>0.955 && !enduranceOn){
+    if([kajak intersectsNode:startCilj] && (a/(2*M_PI*brojKrugova))>0.9 && !enduranceOn){
         //pobjeda win game
        
         [self SaveGame];

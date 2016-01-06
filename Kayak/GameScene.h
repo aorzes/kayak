@@ -20,7 +20,9 @@
     SKShapeNode *osovina;
     SKSpriteNode *aiOnOff;
     SKSpriteNode *endurance;
+    SKSpriteNode *poluga;
     NSInteger brojKrugova;
+    NSInteger  mapa;
     BOOL aionoff,enduranceOn;
     UIActivityIndicatorView *spinner;
 
