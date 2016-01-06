@@ -29,7 +29,6 @@
     /* Setup your scene here */
     
     [self LoadGame];
-    
     SKSpriteNode *podloga = [SKSpriteNode spriteNodeWithImageNamed:@"voda4"];
     podloga.size = CGSizeMake(self.size.width, self.size.height);
     podloga.position = CGPointMake(self.size.width/2, self.size.height/2);
@@ -55,7 +54,7 @@
     NSArray *popisIkona = @[@"staza1ico", @"staza2ico", @"staza3ico", @"staza4ico", @"staza5ico"];
     
     float velicina = (self.size.height - 200) / 5;
-    float polozaj = self.size.height - 150;
+    float polozaj = self.size.height - 170;
     for (int i=0; i<5; i++) {
         SKSpriteNode *okvir = [SKSpriteNode spriteNodeWithImageNamed:@"iOkvir"];
         okvir.size = CGSizeMake(self.size.width/3, velicina-10);

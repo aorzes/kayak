@@ -79,44 +79,59 @@
     NSString *drugoIme = @"zemlja5U";
     NSString *treceIme = @"zemlja5";
     NSString *cetvrtoIme = @"voda4";
-
+    
+    NSURL *playRiver = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"bird" ofType:@"mp3"]];
+    
     switch (mapa) {
         case 0:
             prvoIme = @"staza1";
             drugoIme = @"zemlja1U";
             treceIme = @"zemlja1";
             cetvrtoIme = @"voda1";
+            playRiver = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"bird" ofType:@"mp3"]];
             break;
         case 1:
             prvoIme = @"staza2";
             drugoIme = @"zemlja2U";
             treceIme = @"zemlja2";
             cetvrtoIme = @"voda3";
+            playRiver = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"rijeka1" ofType:@"wav"]];
             break;
         case 2:
             prvoIme = @"staza3";
             drugoIme = @"zemlja3U";
             treceIme = @"zemlja3";
             cetvrtoIme = @"voda2";
+            playRiver = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"rijeka2" ofType:@"wav"]];
             break;
         case 3:
             prvoIme = @"staza4";
             drugoIme = @"zemlja4U";
             treceIme = @"zemlja4";
+            playRiver = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"bird" ofType:@"mp3"]];
             break;
         case 4:
             prvoIme = @"staza5";
             drugoIme = @"zemlja5U";
             treceIme = @"zemlja5";
+            playRiver = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"bird" ofType:@"mp3"]];
             break;
             
         default:
             prvoIme = @"staza5";
             drugoIme = @"zemlja5U";
             treceIme = @"zemlja5";
+            playRiver = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"bird" ofType:@"mp3"]];
             break;
     }
 
+    riverSounds = [[AVAudioPlayer alloc]initWithContentsOfURL:playRiver error:nil];
+    riverSounds.volume = 0.2;
+    [riverSounds setNumberOfLoops: -1];
+    [riverSounds prepareToPlay];
+    [riverSounds play];
+
+    
     voda1 = [SKSpriteNode spriteNodeWithImageNamed:cetvrtoIme];
     voda1.position = CGPointMake(self.size.width/2, self.size.height/2);
     voda1.size = CGSizeMake(self.size.width, self.size.height);
@@ -229,15 +244,9 @@
     dkut=0;
     impuls=0;
     
-    NSURL *playRiver = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"bird" ofType:@"mp3"]];
     
-    riverSounds = [[AVAudioPlayer alloc]initWithContentsOfURL:playRiver error:nil];
-    riverSounds.volume = 0.2;
-    [riverSounds setNumberOfLoops: -1];
-    [riverSounds prepareToPlay];
-    [riverSounds play];
     r=self.size.width*umnozak/2.4;
-    for (float kk=0.01; kk<M_PI*2; kk+=M_PI/7) {
+    for (float kk=-0.02; kk<M_PI*2; kk+=M_PI/7) {
         SKSpriteNode *kamen = [SKSpriteNode spriteNodeWithImageNamed:@"kamen6"];
         kamen.position = CGPointMake(r*cos(kk), r*sin(kk));
         kamen.size = CGSizeMake(20, 20);
@@ -770,8 +779,11 @@
 
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
-    [self mici_kameru];
-    [self miciCamac];
+    
+   
+        [self mici_kameru];
+        [self miciCamac];
+    
     
     
 }

@@ -122,6 +122,9 @@
 		ECCAE0B11C3C560700E31B7E /* Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0B01C3C560700E31B7E /* Facebook.png */; };
 		ECCAE0B31C3C79CA00E31B7E /* naslovna.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0B21C3C79CA00E31B7E /* naslovna.png */; };
 		ECCAE0B51C3D241700E31B7E /* lokot.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0B41C3D241700E31B7E /* lokot.png */; };
+		ECCAE0B91C3D9D3F00E31B7E /* rijeka1.wav in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0B61C3D9D3F00E31B7E /* rijeka1.wav */; };
+		ECCAE0BB1C3D9D3F00E31B7E /* vesloSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0B81C3D9D3F00E31B7E /* vesloSound.wav */; };
+		ECCAE0BF1C3DA6D500E31B7E /* rijeka2.wav in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0BE1C3DA6D500E31B7E /* rijeka2.wav */; };
 		ECD2C6B51C2738CB00A96B7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6B41C2738CB00A96B7F /* main.m */; };
 		ECD2C6B81C2738CB00A96B7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6B71C2738CB00A96B7F /* AppDelegate.m */; };
 		ECD2C6BB1C2738CB00A96B7F /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6BA1C2738CB00A96B7F /* GameScene.m */; };
@@ -262,6 +265,9 @@
 		ECCAE0B01C3C560700E31B7E /* Facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Facebook.png; sourceTree = "<group>"; };
 		ECCAE0B21C3C79CA00E31B7E /* naslovna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = naslovna.png; sourceTree = "<group>"; };
 		ECCAE0B41C3D241700E31B7E /* lokot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lokot.png; sourceTree = "<group>"; };
+		ECCAE0B61C3D9D3F00E31B7E /* rijeka1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rijeka1.wav; sourceTree = "<group>"; };
+		ECCAE0B81C3D9D3F00E31B7E /* vesloSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = vesloSound.wav; sourceTree = "<group>"; };
+		ECCAE0BE1C3DA6D500E31B7E /* rijeka2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rijeka2.wav; sourceTree = "<group>"; };
 		ECD2C6B01C2738CB00A96B7F /* Kayak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kayak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD2C6B41C2738CB00A96B7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ECD2C6B61C2738CB00A96B7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -407,6 +413,9 @@
 			isa = PBXGroup;
 			children = (
 				ECCADFD31C34785600E31B7E /* bird.mp3 */,
+				ECCAE0B61C3D9D3F00E31B7E /* rijeka1.wav */,
+				ECCAE0BE1C3DA6D500E31B7E /* rijeka2.wav */,
+				ECCAE0B81C3D9D3F00E31B7E /* vesloSound.wav */,
 			);
 			name = zvukovi;
 			sourceTree = "<group>";
@@ -637,6 +646,7 @@
 				ECCAE0B11C3C560700E31B7E /* Facebook.png in Resources */,
 				ECCAE0281C37FBB800E31B7E /* zemlja3U.png in Resources */,
 				ECCADFB71C3477AE00E31B7E /* zemlja4.png in Resources */,
+				ECCAE0BB1C3D9D3F00E31B7E /* vesloSound.wav in Resources */,
 				ECCADFC71C34782400E31B7E /* brzac0.png in Resources */,
 				ECCAE0211C37ED6100E31B7E /* voda2.png in Resources */,
 				ECCAE0051C371B1900E31B7E /* iOkvir.png in Resources */,
@@ -655,9 +665,11 @@
 				ECCAE0AD1C3C21B400E31B7E /* novcic7.png in Resources */,
 				ECCADFE81C3550B100E31B7E /* fallPodloga.png in Resources */,
 				ECCADFDA1C3479AF00E31B7E /* MyParticle.sks in Resources */,
+				ECCAE0BF1C3DA6D500E31B7E /* rijeka2.wav in Resources */,
 				ECCAE0A71C3C21B400E31B7E /* novcic1.png in Resources */,
 				ECCAE0491C3AF19900E31B7E /* leaderboard.png in Resources */,
 				ECCADFD11C34782400E31B7E /* brzac10.png in Resources */,
+				ECCAE0B91C3D9D3F00E31B7E /* rijeka1.wav in Resources */,
 				ECCAE0911C3C218500E31B7E /* riba0.png in Resources */,
 				ECD2C6EC1C275D7E00A96B7F /* kamen6.png in Resources */,
 				ECCAE0AE1C3C21B400E31B7E /* novcic8.png in Resources */,
