@@ -15,6 +15,8 @@
 {
 
     NSInteger  mapa;
+    NSInteger ukupnoNovaca;
+    
 }
 
 @end

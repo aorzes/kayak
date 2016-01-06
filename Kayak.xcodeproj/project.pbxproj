@@ -87,7 +87,6 @@
 		ECCAE02C1C37FED900E31B7E /* staza1.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE02B1C37FED900E31B7E /* staza1.png */; };
 		ECCAE0301C389BBB00E31B7E /* voda1.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE02F1C389BBB00E31B7E /* voda1.png */; };
 		ECCAE0341C389E9500E31B7E /* zemlja2U.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0331C389E9500E31B7E /* zemlja2U.png */; };
-		ECCAE0381C39AB9000E31B7E /* naslovna.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0371C39AB9000E31B7E /* naslovna.png */; };
 		ECCAE03A1C39CC1900E31B7E /* staza1ico.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0391C39CC1900E31B7E /* staza1ico.png */; };
 		ECCAE03C1C39CC2200E31B7E /* staza2ico.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE03B1C39CC2200E31B7E /* staza2ico.png */; };
 		ECCAE03E1C39CC2E00E31B7E /* staza3ico.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE03D1C39CC2E00E31B7E /* staza3ico.png */; };
@@ -121,6 +120,8 @@
 		ECCAE0AE1C3C21B400E31B7E /* novcic8.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0A41C3C21B400E31B7E /* novcic8.png */; };
 		ECCAE0AF1C3C21B400E31B7E /* novcic9.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0A51C3C21B400E31B7E /* novcic9.png */; };
 		ECCAE0B11C3C560700E31B7E /* Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0B01C3C560700E31B7E /* Facebook.png */; };
+		ECCAE0B31C3C79CA00E31B7E /* naslovna.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0B21C3C79CA00E31B7E /* naslovna.png */; };
+		ECCAE0B51C3D241700E31B7E /* lokot.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCAE0B41C3D241700E31B7E /* lokot.png */; };
 		ECD2C6B51C2738CB00A96B7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6B41C2738CB00A96B7F /* main.m */; };
 		ECD2C6B81C2738CB00A96B7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6B71C2738CB00A96B7F /* AppDelegate.m */; };
 		ECD2C6BB1C2738CB00A96B7F /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2C6BA1C2738CB00A96B7F /* GameScene.m */; };
@@ -225,7 +226,6 @@
 		ECCAE02B1C37FED900E31B7E /* staza1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = staza1.png; sourceTree = "<group>"; };
 		ECCAE02F1C389BBB00E31B7E /* voda1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voda1.png; sourceTree = "<group>"; };
 		ECCAE0331C389E9500E31B7E /* zemlja2U.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zemlja2U.png; sourceTree = "<group>"; };
-		ECCAE0371C39AB9000E31B7E /* naslovna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = naslovna.png; sourceTree = "<group>"; };
 		ECCAE0391C39CC1900E31B7E /* staza1ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = staza1ico.png; sourceTree = "<group>"; };
 		ECCAE03B1C39CC2200E31B7E /* staza2ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = staza2ico.png; sourceTree = "<group>"; };
 		ECCAE03D1C39CC2E00E31B7E /* staza3ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = staza3ico.png; sourceTree = "<group>"; };
@@ -260,6 +260,8 @@
 		ECCAE0A41C3C21B400E31B7E /* novcic8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = novcic8.png; sourceTree = "<group>"; };
 		ECCAE0A51C3C21B400E31B7E /* novcic9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = novcic9.png; sourceTree = "<group>"; };
 		ECCAE0B01C3C560700E31B7E /* Facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Facebook.png; sourceTree = "<group>"; };
+		ECCAE0B21C3C79CA00E31B7E /* naslovna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = naslovna.png; sourceTree = "<group>"; };
+		ECCAE0B41C3D241700E31B7E /* lokot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lokot.png; sourceTree = "<group>"; };
 		ECD2C6B01C2738CB00A96B7F /* Kayak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kayak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD2C6B41C2738CB00A96B7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ECD2C6B61C2738CB00A96B7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -525,7 +527,7 @@
 				ECCADF891C3473B900E31B7E /* Kajaci */,
 				ECCADF4C1C33F62100E31B7E /* izbornik */,
 				ECD2C6D31C273B5500A96B7F /* uvodna.png */,
-				ECCAE0371C39AB9000E31B7E /* naslovna.png */,
+				ECCAE0B21C3C79CA00E31B7E /* naslovna.png */,
 				ECCADFEB1C35891B00E31B7E /* pehar.png */,
 				ECCADFE71C3550B100E31B7E /* fallPodloga.png */,
 				ECCADFE91C3561D200E31B7E /* winPodloga.png */,
@@ -538,6 +540,7 @@
 				ECD2C6ED1C27609700A96B7F /* voda.png */,
 				ECCAE0B01C3C560700E31B7E /* Facebook.png */,
 				ECCAE0541C3B2F1C00E31B7E /* twiter.png */,
+				ECCAE0B41C3D241700E31B7E /* lokot.png */,
 			);
 			name = slike;
 			sourceTree = "<group>";
@@ -658,6 +661,7 @@
 				ECCAE0911C3C218500E31B7E /* riba0.png in Resources */,
 				ECD2C6EC1C275D7E00A96B7F /* kamen6.png in Resources */,
 				ECCAE0AE1C3C21B400E31B7E /* novcic8.png in Resources */,
+				ECCAE0B51C3D241700E31B7E /* lokot.png in Resources */,
 				ECD2C6D41C273B5500A96B7F /* uvodna.png in Resources */,
 				ECCADFDB1C3479AF00E31B7E /* spark.png in Resources */,
 				ECD2C6BD1C2738CB00A96B7F /* GameScene.sks in Resources */,
@@ -682,7 +686,6 @@
 				ECCADFCA1C34782400E31B7E /* brzac3.png in Resources */,
 				ECCAE0A81C3C21B400E31B7E /* novcic2.png in Resources */,
 				ECCAE0071C371E2E00E31B7E /* back.png in Resources */,
-				ECCAE0381C39AB9000E31B7E /* naslovna.png in Resources */,
 				ECCADFA91C34747700E31B7E /* veslacYellow.png in Resources */,
 				ECCAE0981C3C218500E31B7E /* riba7.png in Resources */,
 				ECCAE01B1C37E94800E31B7E /* zemlja3.png in Resources */,
@@ -720,6 +723,7 @@
 				ECCADFAC1C34773A00E31B7E /* pljus.png in Resources */,
 				ECCAE0AB1C3C21B400E31B7E /* novcic5.png in Resources */,
 				ECCADFA61C34747700E31B7E /* veslacPurple.png in Resources */,
+				ECCAE0B31C3C79CA00E31B7E /* naslovna.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

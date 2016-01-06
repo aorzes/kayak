@@ -98,14 +98,14 @@
     }
     
     SKLabelNode *novacLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
-    novacLabel.text=[NSString stringWithFormat:@"Mony: %ld $",(long)novac];
+    novacLabel.text=[NSString stringWithFormat:@"Money: %ld $",(long)novac];
     novacLabel.fontSize = 16;
     novacLabel.position = CGPointMake(self.size.width/2, self.frame.size.height-180);
     novacLabel.zPosition=3;
     [self addChild:novacLabel];
     
     SKLabelNode *ukupnonovacLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
-    ukupnonovacLabel.text=[NSString stringWithFormat:@"Total mony: %ld $",(long)ukupnoNovaca];
+    ukupnonovacLabel.text=[NSString stringWithFormat:@"Total money: %ld $",(long)ukupnoNovaca];
     ukupnonovacLabel.fontSize = 16;
     ukupnonovacLabel.position = CGPointMake(self.size.width/2, self.frame.size.height-200);
     ukupnonovacLabel.zPosition=3;

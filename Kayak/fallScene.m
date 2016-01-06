@@ -45,7 +45,7 @@
         [self addChild:brojKrugovaLabel];
         
         SKLabelNode *novacLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
-        novacLabel.text=[NSString stringWithFormat:@"Mony: %ld $",(long)novac];
+        novacLabel.text=[NSString stringWithFormat:@"Money: %ld $",(long)novac];
         novacLabel.fontSize = 16;
         novacLabel.position = CGPointMake(self.size.width/2, self.frame.size.height-150);
         novacLabel.zPosition=3;
