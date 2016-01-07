@@ -25,6 +25,7 @@
     NSInteger  mapa;
     BOOL aionoff,enduranceOn;
     UIActivityIndicatorView *spinner;
+    AVAudioPlayer *plopSounds;
 
 }
 

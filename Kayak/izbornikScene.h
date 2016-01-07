@@ -16,6 +16,7 @@
 
     NSInteger  mapa;
     NSInteger ukupnoNovaca;
+    AVAudioPlayer *plopSounds;
     
 }
 

@@ -31,6 +31,7 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setFloat:ukupnoVrijeme forKey:@"ukupnoVrijeme"];
     [defaults setInteger:novac forKey:@"novac"];
+    [defaults setInteger:brojKrugova forKey:@"brojKrugova"];
     [defaults setFloat:a forKey:@"akrug"];
     ukupnoNovaca +=novac;
     [defaults setInteger:ukupnoNovaca forKey:@"ukupnoNovaca"];
@@ -600,34 +601,7 @@
             
         }
         krug=(int)(a/(2*M_PI));
-        //if((a/(2*M_PI)-(float)krug>0.9 )) krug++;
         krugoviLabel.text=[NSString stringWithFormat:@"Lap:%d",krug+1];
-        //win game
-        /*
-        if(krug==brojKrugova ){
-            //pobjeda
-            [self SaveGame];
-            [pljuskanje invalidate];
-            pljuskanje = nil;
-            [pljusKamena invalidate];
-            pljusKamena =nil;
-            [ribaTimer invalidate];
-            ribaTimer = nil;
-            [brzacTimer invalidate];
-            brzacTimer = nil;
-            [potezac2Timer invalidate];
-            potezac2Timer = nil;
-            [riverSounds stop];
-            riverSounds = nil;
-            
-            SKScene *igra = [[winScene alloc]initWithSize:self.size];
-            SKTransition *tranzicija = [SKTransition pushWithDirection:SKTransitionDirectionDown duration:1.4];
-            [self.view presentScene:igra transition:tranzicija];
-            
-           
-            
-        }
-        */
     }
     
     
@@ -656,7 +630,14 @@
 
 -(void) miciCamac2{
     
-    b-=0.0005;
+   
+    if (kajak2.position.y>kajak.position.y) {
+        b-=0.00030;
+    }
+    else
+    {
+        b-=0.00040;
+    }
     bDodatak += 0.2;
     rDodatak= sin(bDodatak)*30+40;
     potezac2.position = CGPointMake(centar.position.x + (r + rDodatak) * cos(b) , centar.position.y + (r + rDodatak) * sin(b));

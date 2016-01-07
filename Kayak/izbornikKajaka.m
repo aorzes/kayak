@@ -37,7 +37,7 @@
     
     SKSpriteNode *quick = [SKSpriteNode spriteNodeWithImageNamed:@"back"];
     quick.size = CGSizeMake(self.size.width/3, 50);
-    quick.position = CGPointMake(self.size.width/2, self.size.height - 60);
+    quick.position = CGPointMake(self.size.width/2, self.size.height - 70);
     quick.name = @"back";
     quick.zPosition=2;
     [self addChild:quick];
@@ -45,23 +45,45 @@
     NSArray *popisIkona = @[@"kayakRed", @"kayakBlue", @"kayakYellow", @"kayakCyan", @"kayakGreen", @"kayakPurple", @"kayakWhite", @"kayakBlack"];
     
     float velicina = (self.size.height - 200) / 7;
-    float polozaj = self.size.height - 110;
+    float polozaj = self.size.height - 120;
     for (int i=0; i<8; i++) {
         SKSpriteNode *okvir = [SKSpriteNode spriteNodeWithImageNamed:@"iOkvir"];
         okvir.size = CGSizeMake(self.size.width/2, velicina-10);
         okvir.position = CGPointMake(self.size.width/2, polozaj);
-        polozaj -= velicina;
         okvir.name = [NSString stringWithFormat:@"okvir%d",i];
         okvir.zPosition=3;
         [self addChild:okvir];
         
+        SKSpriteNode *shadow = [SKSpriteNode spriteNodeWithImageNamed:@"iOkvir"];
+        shadow.size = okvir.size;
+        shadow.position = CGPointMake(self.size.width/2-5, polozaj-5);
+        shadow.blendMode = SKBlendModeAlpha;
+        shadow.colorBlendFactor = 1;
+        shadow.color = [SKColor blackColor];
+        shadow.zPosition=2;
+        shadow.alpha = .25;
+        [self addChild:shadow];
+        
+        polozaj -= velicina;
+        
         SKSpriteNode *ikona = [SKSpriteNode spriteNodeWithImageNamed:popisIkona[i]];
-        ikona.size = CGSizeMake(30, 100);
+        ikona.size = CGSizeMake(25, 100);
         ikona.position = CGPointMake(-20, 0);
         ikona.zRotation = M_PI_2;
         ikona.name = @"ikona";
-        ikona.zPosition=-1;
+        ikona.zPosition=0;
         [okvir addChild:ikona];
+        
+        SKSpriteNode *shadow2 = [SKSpriteNode spriteNodeWithImageNamed:popisIkona[i]];
+        shadow2.size = ikona.size;
+        shadow2.position = CGPointMake(-25, -5);
+        shadow2.blendMode = SKBlendModeAlpha;
+        shadow2.colorBlendFactor = 1;
+        shadow2.color = [SKColor blackColor];
+        shadow2.zPosition=-1;
+        shadow2.zRotation = M_PI_2;
+        shadow2.alpha = .25;
+        [okvir addChild:shadow2];
         
         SKSpriteNode *check = [SKSpriteNode spriteNodeWithImageNamed:@"check"];
         check.size = CGSizeMake(25, 25);
@@ -73,6 +95,10 @@
         [okvir addChild:check];
         
     }
+    NSURL *playPlop = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"plop" ofType:@"mp3"]];
+    plopSounds = [[AVAudioPlayer alloc]initWithContentsOfURL:playPlop error:nil];
+    plopSounds.volume = 0.8;
+    [plopSounds prepareToPlay];
     
 }
 
@@ -107,7 +133,7 @@
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
-    
+    [plopSounds play];
     for (UITouch *touch in touches) {
         CGPoint p = [touch locationInNode:self];
         SKNode *node = [self nodeAtPoint:p];

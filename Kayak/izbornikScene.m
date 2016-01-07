@@ -59,10 +59,21 @@
         SKSpriteNode *okvir = [SKSpriteNode spriteNodeWithImageNamed:@"iOkvir"];
         okvir.size = CGSizeMake(self.size.width/3, velicina-10);
         okvir.position = CGPointMake(self.size.width/2, polozaj);
-        polozaj -= velicina;
         okvir.name = [NSString stringWithFormat:@"okvir%d",i];
         okvir.zPosition=3;
         [self addChild:okvir];
+        
+        SKSpriteNode *shadow = [SKSpriteNode spriteNodeWithImageNamed:@"iOkvir"];
+        shadow.size = CGSizeMake(self.size.width/3, velicina-10);
+        shadow.position = CGPointMake(self.size.width/2-5, polozaj-5);
+        shadow.blendMode = SKBlendModeAlpha;
+        shadow.colorBlendFactor = 1;
+        shadow.color = [SKColor blackColor];
+        shadow.zPosition=2;
+        shadow.alpha = .25;
+        [self addChild:shadow];
+        
+        polozaj -= velicina;
         
         SKSpriteNode *ikona = [SKSpriteNode spriteNodeWithImageNamed:popisIkona[i]];
         ikona.size = CGSizeMake(okvir.size.width/2, okvir.size.height-10);
@@ -106,6 +117,12 @@
         
     }
     
+    NSURL *playPlop = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"plop" ofType:@"mp3"]];
+    plopSounds = [[AVAudioPlayer alloc]initWithContentsOfURL:playPlop error:nil];
+    plopSounds.volume = 0.8;
+    [plopSounds prepareToPlay];
+    
+
 }
 
 -(void) obrisiCheck:(SKNode *)mnod{
@@ -139,7 +156,7 @@
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
-    
+    [plopSounds play];
     for (UITouch *touch in touches) {
         CGPoint p = [touch locationInNode:self];
         SKNode *node = [self nodeAtPoint:p];

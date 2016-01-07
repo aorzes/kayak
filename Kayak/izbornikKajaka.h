@@ -12,6 +12,7 @@
 @interface izbornikKajaka : SKScene
 {
     NSInteger bojaKajaka;
+    AVAudioPlayer *plopSounds;
 
 }
 @end

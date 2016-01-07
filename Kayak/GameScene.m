@@ -225,7 +225,10 @@
     }
     
     [[gameCenterFiles sharedInstance]authenticateLocalUser];
-    
+    NSURL *playPlop = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"plop" ofType:@"mp3"]];
+    plopSounds = [[AVAudioPlayer alloc]initWithContentsOfURL:playPlop error:nil];
+    plopSounds.volume = 0.8;
+    [plopSounds prepareToPlay];
     
 }
 
@@ -293,7 +296,7 @@
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
-    
+    [plopSounds play];
     for (UITouch *touch in touches) {
         CGPoint p = [touch locationInNode:self];
         SKNode *node = [self nodeAtPoint:p];
