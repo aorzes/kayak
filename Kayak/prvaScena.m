@@ -74,7 +74,7 @@
     centar.zPosition = 2;
     [self addChild:centar];
     
-    
+    brzinaBrzaca = 4;
 //izbor mape
     NSString *prvoIme = @"staza5";
     NSString *drugoIme = @"zemlja5U";
@@ -103,6 +103,7 @@
             drugoIme = @"zemlja3U";
             treceIme = @"zemlja3";
             cetvrtoIme = @"voda2";
+            brzinaBrzaca = 6;
             playRiver = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"rijeka2" ofType:@"wav"]];
             break;
         case 3:
@@ -688,7 +689,7 @@
     for(SKSpriteNode *nod in self.children){
         if ([nod.name isEqualToString:@"brzac"] ) {
             CGPoint pr=nod.position;
-            pr.y-=4;
+            pr.y-=brzinaBrzaca;
             if(pr.y<-100) pr.y= self.size.height + 200;
             nod.position = pr;
             if([kajak intersectsNode:nod])

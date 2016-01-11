@@ -378,6 +378,13 @@
             
         }
 
+        if ([node.name isEqualToString:@"leaderboard"]) {
+            
+            [self presentLeaderboards];
+            
+            
+            
+        }
 
 
 

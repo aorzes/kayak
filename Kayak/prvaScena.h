@@ -33,6 +33,7 @@
     SKShapeNode *potezac2;
     
     float a,b,bDodatak,r,rDodatak;
+    float brzinaBrzaca;
     int krug;
     NSInteger ukupnoNovaca;
     int novac;
