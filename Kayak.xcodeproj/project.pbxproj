@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC3868801C4442600081DAF6 /* vesloSound3.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC38687F1C4442600081DAF6 /* vesloSound3.wav */; };
 		EC3880B51C3BF887007A6B3A /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3880B41C3BF887007A6B3A /* iAd.framework */; };
 		EC3880B71C3BF906007A6B3A /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3880B61C3BF906007A6B3A /* GameKit.framework */; };
 		EC3880BA1C3BFA5C007A6B3A /* gameCenterFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3880B91C3BFA5C007A6B3A /* gameCenterFiles.m */; };
@@ -140,6 +141,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC38687F1C4442600081DAF6 /* vesloSound3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = vesloSound3.wav; sourceTree = "<group>"; };
 		EC3880B41C3BF887007A6B3A /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		EC3880B61C3BF906007A6B3A /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		EC3880B81C3BFA5C007A6B3A /* gameCenterFiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameCenterFiles.h; sourceTree = "<group>"; };
@@ -404,6 +406,7 @@
 		ECCADFD21C34783D00E31B7E /* zvukovi */ = {
 			isa = PBXGroup;
 			children = (
+				EC38687F1C4442600081DAF6 /* vesloSound3.wav */,
 				ECCADFD31C34785600E31B7E /* bird.mp3 */,
 				ECCAE0B61C3D9D3F00E31B7E /* rijeka1.wav */,
 				ECCAE0BE1C3DA6D500E31B7E /* rijeka2.wav */,
@@ -677,6 +680,7 @@
 				ECCAE0931C3C218500E31B7E /* riba2.png in Resources */,
 				ECCAE0AF1C3C21B400E31B7E /* novcic9.png in Resources */,
 				ECCADF881C3445E000E31B7E /* enduranceOn.png in Resources */,
+				EC3868801C4442600081DAF6 /* vesloSound3.wav in Resources */,
 				ECCADF951C34746200E31B7E /* kayakGreen.png in Resources */,
 				ECCADFCA1C34782400E31B7E /* brzac3.png in Resources */,
 				ECCAE0A81C3C21B400E31B7E /* novcic2.png in Resources */,
