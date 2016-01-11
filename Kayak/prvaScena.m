@@ -704,7 +704,11 @@
         }
     }
 }
+-(void) PraznaFunkcija{
 
+    NSLog(@"prazno");
+
+}
 
 -(void)mici_kameru{
     
