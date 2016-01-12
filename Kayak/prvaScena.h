@@ -48,6 +48,10 @@
     
     double impuls, dkut, kut;
     AVAudioPlayer *riverSounds;
+    AVAudioPlayer *vesloSound1;
+    AVAudioPlayer *vesloSound2;
+    
+    
     SKEmitterNode * para;
     
     NSInteger  brojKrugova;

@@ -87,6 +87,17 @@
     centar.zPosition = 2;
     [self addChild:centar];
     
+    
+    NSURL *vesloZ = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"vesloSound3" ofType:@"wav"]];
+    
+    vesloSound1 = [[AVAudioPlayer alloc]initWithContentsOfURL:vesloZ error:nil];
+    [vesloSound1 prepareToPlay];
+    
+    vesloSound2 = [[AVAudioPlayer alloc]initWithContentsOfURL:vesloZ error:nil];
+    [vesloSound2 prepareToPlay];
+    
+    
+    
     brzinaBrzaca = 4;
 //izbor mape
     NSString *prvoIme = @"staza5";
@@ -363,15 +374,21 @@
     for (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];
         
+        
+        
+        
         if (location.x < kajak.position.x)
         {
             SKAction *lijevoRot = [SKAction rotateToAngle:0.9 duration:0.3];
             [veslac runAction:lijevoRot];
+            [vesloSound1 play];
+            
         }
         else
         {
             SKAction *desnoRot = [SKAction rotateToAngle:-0.9 duration:0.3];
             [veslac runAction:desnoRot];
+            [vesloSound2 play];
             
         }
         
