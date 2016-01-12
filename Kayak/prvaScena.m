@@ -36,6 +36,19 @@
     ukupnoNovaca +=novac;
     [defaults setInteger:ukupnoNovaca forKey:@"ukupnoNovaca"];
     [defaults synchronize];
+    
+    [self reportCoin];
+}
+
+-(void)reportCoin{
+    
+    GKScore *highScore = [[GKScore alloc]initWithLeaderboardIdentifier:@"Coins"];
+    highScore.value = ukupnoNovaca;
+    [GKScore reportScores:@[highScore] withCompletionHandler:^(NSError *error) {
+        if (error != nil) {
+            NSLog(@"%@", [error localizedDescription]);
+        }
+    }];
 }
 
 

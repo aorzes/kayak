@@ -15,7 +15,9 @@
 -(void)LoadGame{
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     ukupnoVrijeme = [defaults floatForKey:@"ukupnoVrijeme"];
-    najboljeVrijeme = [defaults floatForKey:@"najboljeVrijeme"];
+    mapa = [defaults integerForKey:@"mapa"];
+    NSString *kojeVrijeme = [NSString stringWithFormat:@"najboljeVrijeme%ld",(long)mapa];
+    najboljeVrijeme = [defaults floatForKey:kojeVrijeme];
     brojKrugova = [defaults integerForKey:@"brojKrugova"];
     novac = [defaults integerForKey:@"novac"];
     ukupnoNovaca = [defaults integerForKey:@"ukupnoNovaca"];
@@ -23,10 +25,26 @@
 
 -(void)SaveGame {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setFloat:najboljeVrijeme forKey:@"najboljeVrijeme"];
+    NSString *kojeVrijeme = [NSString stringWithFormat:@"najboljeVrijeme%ld",(long)mapa];
+    [defaults setFloat:najboljeVrijeme forKey:kojeVrijeme];
     [defaults synchronize];
+    [self reportScore];
     
 }
+
+-(void)reportScore{
+    
+    int  mapa1 = (int)mapa + 1;
+    NSString *kojaMapaVrijeme = [NSString stringWithFormat:@"time%d",mapa1];
+    GKScore *highScore = [[GKScore alloc]initWithLeaderboardIdentifier:kojaMapaVrijeme];
+    highScore.value = (int64_t)(najboljeVrijeme*100);
+    [GKScore reportScores:@[highScore] withCompletionHandler:^(NSError *error) {
+        if (error != nil) {
+            NSLog(@"%@", [error localizedDescription]);
+        }
+    }];
+}
+
 
 -(void)didMoveToView:(SKView *)view {
     /* Setup your scene here */
@@ -78,6 +96,14 @@
     lapsLabel.position = CGPointMake(self.size.width/2, self.frame.size.height-140);
     lapsLabel.zPosition=3;
     [self addChild:lapsLabel];
+    
+    SKLabelNode *mapLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+    mapLabel.text=[NSString stringWithFormat:@"Map: %ld",(long)mapa+1];
+    mapLabel.fontSize = 16;
+    mapLabel.position = CGPointMake(self.size.width/2, self.frame.size.height-160);
+    mapLabel.zPosition=3;
+    [self addChild:mapLabel];
+
 
     SKAction *povecaj = [SKAction scaleTo:1.5 duration:1.0];
     SKAction *smanji = [SKAction scaleTo:1.0 duration:0.5];
@@ -89,7 +115,7 @@
     pokruguLabel.fontColor = bojaNovog;
     pokruguLabel.colorBlendFactor = 1;
     pokruguLabel.fontSize = 16;
-    pokruguLabel.position = CGPointMake(self.size.width/2, self.frame.size.height-160);
+    pokruguLabel.position = CGPointMake(self.size.width/2, self.frame.size.height-180);
     pokruguLabel.zPosition=3;
     [self addChild:pokruguLabel];
     
@@ -100,14 +126,14 @@
     SKLabelNode *novacLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
     novacLabel.text=[NSString stringWithFormat:@"Money: %ld $",(long)novac];
     novacLabel.fontSize = 16;
-    novacLabel.position = CGPointMake(self.size.width/2, self.frame.size.height-180);
+    novacLabel.position = CGPointMake(self.size.width/2, self.frame.size.height-200);
     novacLabel.zPosition=3;
     [self addChild:novacLabel];
     
     SKLabelNode *ukupnonovacLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
     ukupnonovacLabel.text=[NSString stringWithFormat:@"Total money: %ld $",(long)ukupnoNovaca];
     ukupnonovacLabel.fontSize = 16;
-    ukupnonovacLabel.position = CGPointMake(self.size.width/2, self.frame.size.height-200);
+    ukupnonovacLabel.position = CGPointMake(self.size.width/2, self.frame.size.height-220);
     ukupnonovacLabel.zPosition=3;
     [self addChild:ukupnonovacLabel];
     
@@ -116,7 +142,7 @@
     najboljeLabel.fontColor = bojaNajboljeg;
     najboljeLabel.colorBlendFactor = 1;
     najboljeLabel.fontSize = 16;
-    najboljeLabel.position = CGPointMake(self.size.width/2, self.frame.size.height-220);
+    najboljeLabel.position = CGPointMake(self.size.width/2, self.frame.size.height-240);
     najboljeLabel.zPosition=3;
     [self addChild:najboljeLabel];
     

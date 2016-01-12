@@ -19,10 +19,12 @@
     NSInteger  brojKrugova;
     NSInteger  ukupnoNovaca;
     NSInteger novac;
+    NSInteger  mapa;
     
     SKSpriteNode *newGame;
     SKSpriteNode *fbook;
     SKSpriteNode *twit;
+    
     
 }
 @end
