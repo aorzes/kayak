@@ -24,6 +24,7 @@
         aionoff = YES;
         enduranceOn = NO;
         mapa = 0;
+        ukupnoNovaca = 0;
     }
 }
 
@@ -91,9 +92,11 @@
     NSURL *vesloZ = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"vesloSound3" ofType:@"wav"]];
     
     vesloSound1 = [[AVAudioPlayer alloc]initWithContentsOfURL:vesloZ error:nil];
+    vesloSound1.volume = 0.2;
     [vesloSound1 prepareToPlay];
     
     vesloSound2 = [[AVAudioPlayer alloc]initWithContentsOfURL:vesloZ error:nil];
+    vesloSound2.volume = 0.2;
     [vesloSound2 prepareToPlay];
     
     
